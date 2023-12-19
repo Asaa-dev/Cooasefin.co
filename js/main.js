@@ -1,65 +1,92 @@
-// TODO: Navegador
-// ?: Declaramos variable
+// TODO: Declaración de variables
+const navButton = document.querySelector('.nav__button');
+const navMenu = document.querySelector('.nav__container');
+const tabButttons = document.querySelectorAll('.features__tab');
 
-const navButton = document.querySelector(".nav__button");
+const clickQuestions = document.querySelectorAll('.article__question');
 
-const navMenu = document.querySelector(".nav__container");
+// TODO: Evento de navegación responsive.
+navButton.addEventListener('click', ()=>{
+    
+    const navLogo = document.querySelector('.nav__logo');
 
-const tabButtons = document.querySelectorAll('.features__tab')
+    navMenu.classList.toggle('nav__container--active');
 
-// ?: Action nav
-navButton.addEventListener("click", () => {
-  const navLogo = document.querySelector(".nav__logo");
+    if(navMenu.classList.contains('nav__container--active')){
 
-  navMenu.classList.toggle("nav__container--active");
+        navLogo.setAttribute('src', './images/logo-bookmark-white.svg');
+        navButton.setAttribute('src', '././images/icon-close.svg');
 
+    }else{
 
-// ?: Condicionales de acción
-  if (navMenu.classList.contains("nav__container--active")) {
-
-    navLogo.setAttribute('src','./images/logo-bookmark-white.svg');
-
-    navButton.setAttribute('src','./images/icon-close.svg');
-
-  }else{
-
-    navLogo.setAttribute('src','./images/logo-bookmark.svg');
-
-    navButton.setAttribute('src','./images/icon-hamburger.svg');
-
-  }
-});
-
-// ?: Action features
-
-const removeActiveElements = (selector)=>{
-  const elementsActive = document.querySelectorAll(`.${selector}`);
-
-  if(elementsActive.length){
-
-    elementsActive.forEach(elementActive =>{
-      elementActive.classList.remove(selector);
-    });
-  }
-}
-
-// ?: Action features nav
-tabButtons.forEach(tabButton =>{
-  tabButton.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    if(!tabButton.classList.contains('features__tab--active')){
-
-      const articleNumber = tabButton.getAttribute('data-article');
-
-      const articleShow = document.querySelector(`.features__article:nth-of-type(${articleNumber})`)
-
-      removeActiveElements('features__tab--active');
-      removeActiveElements('features__article--active');
-
-      articleShow.classList.add('features__article--active');
-      tabButton.classList.add('features__tab--active');
+        navLogo.setAttribute('src', './images/logo-bookmark.svg');
+        navButton.setAttribute('src', '././images/icon-hamburger.svg');
 
     }
-  })
-})
+
+});
+
+// TODO: Evento de navegación responsive, cambios de tamaño en visualización.
+const removeActiveElements = (selector)=>{
+    const elementsActive = document.querySelectorAll(`.${selector}`);
+
+    if(elementsActive.length){
+
+        elementsActive.forEach(elementActive =>{
+            elementActive.classList.remove(selector);
+        });
+
+    }
+}
+
+// TODO: Evento de navegación en section features.
+tabButttons.forEach(tabButton =>{
+    tabButton.addEventListener('click', (e)=>{
+        e.preventDefault();
+
+        if(!tabButton.classList.contains('features__tab--active')){
+            
+            const articleNumber = tabButton.getAttribute('data-article');
+
+            const articleShow = document.querySelector(`.features__article:nth-of-type(${articleNumber})`);
+
+            console.log(articleNumber);
+
+            removeActiveElements('features__article--active');
+            removeActiveElements('features__tab--active');
+
+
+            articleShow.classList.add('features__article--active');
+            tabButton.classList.add('features__tab--active');
+
+        }
+    })
+});
+
+// TODO: Evento de cambio de rotación icon-arrow
+clickQuestions.forEach(clickQuestion =>{
+    clickQuestion.addEventListener('click', ()=>{
+
+        const arrow = clickQuestion.children[0];
+        arrow.classList.toggle('article__arrow--rotate');
+
+        const anwserContainer = clickQuestion.nextElementSibling;
+        
+        anwserContainer.classList.toggle('article__content--show');
+
+    });
+});
+
+//TODO: Evento de navegación responsive global.
+window.addEventListener('resize', ()=>{
+    const isMenuActive = document.querySelector('.nav__container--active');
+
+    if(isMenuActive){
+        const navLogo = document.querySelector('.nav__logo');
+
+        navMenu.classList.remove('nav__container--active');
+        navLogo.setAttribute('src', './images/logo-bookmark.svg');
+        navButton.setAttribute('src', '././images/icon-hamburger.svg');
+        
+    }
+});
