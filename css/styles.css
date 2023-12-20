@@ -66,6 +66,12 @@ body {
     --padding-container: 0;
 }
 
+.nav__logo{
+    height: 50px;
+    width: auto;
+    transition: all 0.3s ease 0s;
+}
+
 .nav__figure {
     z-index: 100;
 }
@@ -178,14 +184,16 @@ body {
 .hero__figure::before {
     content: "";
     position: absolute;
-    background-color: var(--dark-light-purple);
+    background: linear-gradient(to left, 
+        var(--dark-purple),
+        var(--dark-light-purple));
     width: 60%;
     max-width: 450px;
     bottom: 30px;
     top: 30%;
     right: 0;
 
-    border-radius: 100px 0 0 100px;
+    border-radius: 100px 20px 20px 100px;
     z-index: -1;
 }
 
@@ -338,14 +346,15 @@ body {
 .features__figure::before {
     content: "";
     position: absolute;
-    background-color: var(--dark-light-purple);
-
+    background: linear-gradient(to left, 
+        var(--dark-purple),
+        var(--dark-light-purple));
     height: 150px;
     width: 50%;
     max-width: 450px;
     bottom: 0;
     left: 0;
-    border-radius: 0 100px 100px 0;
+    border-radius: 20px 100px 100px 20px;
 
     z-index: -1;
 
@@ -612,6 +621,8 @@ body {
 
 .footer__logo {
     margin: 0 auto;
+    height: 50px;
+    width: auto;
 }
 
 .footer__list {
@@ -659,6 +670,12 @@ body {
     /* TODO: Nav min-width 768px */
     .nav__hamburguer {
         display: none;
+    }
+
+    .nav__logo{
+        height: 70px;
+        width: auto;
+        transition: all 0.3s ease 0s;
     }
 
     .nav__container {
@@ -731,7 +748,6 @@ body {
     }
 
     .hero__img {
-
         max-width: 5000px;
     }
 
