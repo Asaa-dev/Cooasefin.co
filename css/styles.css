@@ -81,6 +81,7 @@ body {
     position: absolute;
     inset: 0;
     margin: auto;
+    cursor: pointer;
 }
 
 .nav__container {
@@ -88,7 +89,8 @@ body {
     inset: 0;
     padding: 70px 0;
     min-height: 600px;
-    background-color: var(--very-dark-purple-omega);
+    background-color: var(--very-dark);
+    text-decoration: none;
 
     display: flex;
     flex-direction: column;
@@ -114,7 +116,6 @@ body {
 .nav__element {
     text-align: center;
     padding: 1.5rem 0;
-    border-top: 1px solid white;
 }
 
 .nav__link {
@@ -123,20 +124,27 @@ body {
     text-transform: uppercase;
     display: block;
     font-weight: 500;
+    transition: all 0.3s ease 0s;
+}
+
+.nav__link:hover {
+    color: white;
+    transform: scale(1.07);
 }
 
 .nav__link--last {
-    border: 1px solid white;
-    border-radius: 4px;
+    background-color: var(--dark-light-purple);
+    color: white;
+    border: none;
+    border-radius: 3px;
     padding: 1rem 0;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
 .nav__link--last:hover {
-    background-color: var(--soft-purple-basic);
     color: white;
-    transform: scale(1.07);
+    background-color: var(--soft-purple-basic);
 }
 
 .nav__social {
