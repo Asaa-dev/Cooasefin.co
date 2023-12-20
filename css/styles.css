@@ -119,7 +119,7 @@ body {
 }
 
 .nav__link {
-    color: white;
+    color: var(--grayish);
     text-decoration: none;
     text-transform: uppercase;
     display: block;
@@ -129,7 +129,6 @@ body {
 
 .nav__link:hover {
     color: white;
-    transform: scale(1.07);
 }
 
 .nav__link--last {
@@ -153,6 +152,11 @@ body {
     grid-auto-flow: column;
     align-items: center;
     gap: 2rem;
+    transition: all 0.3s ease 0s;
+}
+
+.nav__social:hover {
+    transform: scale(1.07);
 }
 
 /* TODO: Hero */
@@ -586,9 +590,13 @@ body {
 
 .joined__submit {
     background-color: var(--very-dark);
-    color: white;
+    color: var(--grayish);
     transition: all 0.3s ease 0s;
     cursor: pointer;
+}
+
+.joined__submit:hover {
+    color: white;
 }
 
 /* TODO: footer */
