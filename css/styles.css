@@ -1,22 +1,4 @@
-/*  TODO: Cambios pendientes
-    TODO: 1. Agregar colores
-            ?: Primarios, segundarios
-            * Corregido
-    TODO: 2. Cambiar nombres de variables
-            ! Pendiente
-    TODO: 3. Agregar efectos en los botones
-            ?: Sombreado, pointer.
-            * Corregido
-    TODO: 4. Selección de colores en las secciones
-            * Corregido
-
-    !: Revisión de icon-arrow, cambio de color en efecto js.
-    * Corregido
-    !: Revisión general de variables, rutas.
-
-*/
-
-/* TODO: General */
+/* *General */
 
 * {
     margin: 0;
@@ -31,6 +13,7 @@
     --dark-light-gray: #393d42;
     --grayish: hsl(229, 8%, 60%);
     --very-dark: #19191a;
+    --soft-white: #e5e5f7;
 
     --grayish-alpha: hsl(229, 8%, 60%, .5);
     --very-dark-purple-alpha: hsl(240, 2%, 10%, .8);
@@ -54,7 +37,7 @@ body {
     padding: var(--padding-container);
 }
 
-/* TODO: Nav */
+/* * Nav */
 
 .nav {
     width: 90%;
@@ -66,7 +49,7 @@ body {
     --padding-container: 0;
 }
 
-.nav__logo{
+.nav__logo {
     height: 50px;
     width: auto;
     transition: all 0.3s ease 0s;
@@ -165,7 +148,7 @@ body {
     transform: scale(1.07);
 }
 
-/* TODO: Hero */
+/* * Section Hero */
 
 .hero__main {
     width: 100%;
@@ -184,9 +167,9 @@ body {
 .hero__figure::before {
     content: "";
     position: absolute;
-    background: linear-gradient(to left, 
-        var(--dark-purple),
-        var(--dark-light-purple));
+    background: linear-gradient(to left,
+            var(--dark-purple),
+            var(--dark-light-purple));
     width: 60%;
     max-width: 450px;
     bottom: 30px;
@@ -256,44 +239,44 @@ body {
 }
 
 
-/* TODO: features */
+/* * Section features */
 
-.features {
+.services {
     display: grid;
     grid-template-columns: 5% 1fr 5%;
 }
 
-.features__content {
+.services__content {
     grid-column: 2/3;
     text-align: center;
 }
 
-.features__title {
+.services__title {
     font-size: 1.7rem;
     color: var(--very-dark);
 }
 
-.features__paragraph {
+.services__paragraph {
     line-height: 1.5;
     color: var(--grayish);
     margin: 1rem auto 2.5rem;
     max-width: 400px;
 }
 
-.features__list {
+.services__list {
     padding: 0;
     list-style: none;
 }
 
-.features__element {
+.services__element {
     border-top: 1.5px solid var(--grayish);
 }
 
-.features__element:last-child {
+.services__element:last-child {
     border-bottom: 1.5px solid var(--grayish);
 }
 
-.features__tab {
+.services__tab {
     display: inline-block;
     padding: 1.5rem 0;
     text-decoration: none;
@@ -305,21 +288,21 @@ body {
     transition: 0.3s ease 0s;
 }
 
-.features__tab:hover {
+.services__tab:hover {
     transform: scale(1.07);
 }
 
-.features__tab--active {
+.services__tab--active {
     border-color: var(--dark-light-purple);
 }
 
-.features__container {
+.services__container {
     grid-column: 1/-1;
     display: grid;
     grid-template-areas: "article";
 }
 
-.features__article {
+.services__article {
     grid-area: article;
     opacity: 0;
     pointer-events: none;
@@ -327,28 +310,28 @@ body {
     transition: opacity .6s;
 }
 
-.features__article--active {
+.services__article--active {
     pointer-events: unset;
     opacity: 1;
 }
 
-.features__figure {
+.services__figure {
     padding: 3rem 0;
     position: relative;
 }
 
-.features__img {
+.services__img {
     width: 80%;
     margin: 0 auto;
     max-width: 450px;
 }
 
-.features__figure::before {
+.services__figure::before {
     content: "";
     position: absolute;
-    background: linear-gradient(to left, 
-        var(--dark-purple),
-        var(--dark-light-purple));
+    background: linear-gradient(to left,
+            var(--dark-purple),
+            var(--dark-light-purple));
     height: 150px;
     width: 50%;
     max-width: 450px;
@@ -360,26 +343,26 @@ body {
 
 }
 
-.features__texts {
+.services__texts {
     width: 90%;
     margin: 0 auto;
     margin-top: 3rem;
     text-align: center;
 }
 
-.features__subtitle {
+.services__subtitle {
     color: var(--very-dark);
     font-size: 1.7rem;
 }
 
 
-.features__copy {
+.services__copy {
     color: var(--grayish);
     line-height: 1.5;
     margin-top: 1.2rem;
 }
 
-.features__cta {
+.services__cta {
     display: none;
     margin-top: 1.2rem;
     padding: 1rem 1.5rem;
@@ -390,13 +373,100 @@ body {
     transition: all 0.3s ease 0s;
 }
 
-.features__cta:hover {
+.services__cta:hover {
     color: white;
     background-color: var(--soft-purple-basic);
     transform: scale(1.03);
 }
 
-/* TODO: download */
+/* * Section price */
+.price {
+    width: 90%;
+    text-align: center;
+}
+
+.price__subtitle {
+    color: var(--very-dark);
+    font-size: 1.7rem;
+}
+
+.price__paragraph {
+    color: var(--grayish);
+    margin: 1rem auto 2.5rem;
+    max-width: 700px;
+}
+
+.price__table {
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.price__element {
+    background-color: var(--soft-white);
+    text-align: center;
+    border-radius: 10px;
+    width: 330px;
+    padding: 40px;
+    --color-plan: var(--grayish);
+    --color-price: var(--very-dark-purple);
+    --bg-cta: var(--very-dark);
+    --color-cta: white;
+    --color-items: var(--dark-light-gray);
+}
+
+.price__element--best {
+    width: 370px;
+    padding: 60px 40px;
+    background-color: var(--dark-light-purple);
+    --color-plan: rgb(255 255 255 / 75%);
+    --color-price: white;
+    --bg-cta: var(--very-dark);
+    --color-cta: white;
+    --color-items: white;
+}
+
+
+.price__name {
+    color: var(--color-plan);
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.price__price {
+    font-size: 2.5rem;
+    color: var(--color-price);
+}
+
+.price__items {
+    margin-top: 35px;
+    display: grid;
+    gap: 1em;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: var(--color-items);
+}
+
+.price__cta {
+    display: block;
+    padding: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--bg-cta);
+    color: var(--color-cta);
+    transition: all 0.3s ease 0s;
+}
+
+.price__cta:hover {
+    transform: scale(1.03);
+}
+
+/*  TODO: download comment (Estilos versión 1.0.0)
+    ?: Se guarda para reutilizar.
 
 .download {
     width: 90%;
@@ -467,7 +537,9 @@ body {
     transform: scale(1.03);
 }
 
-/* TODO: article */
+*/
+
+/* * Section article answer */
 
 .article {
     width: 90%;
@@ -535,8 +607,6 @@ body {
     text-align: left;
     padding-top: 0;
     color: var(--grayish);
-
-
 }
 
 .article__cta {
@@ -557,7 +627,7 @@ body {
     transform: scale(1.03);
 }
 
-/* TODO: joined */
+/* * Section joined */
 
 .joined {
     background-color: var(--dark-purple);
@@ -608,7 +678,7 @@ body {
     color: white;
 }
 
-/* TODO: footer */
+/* *Section footer */
 
 .footer {
     background-color: var(--very-dark);
@@ -655,9 +725,10 @@ body {
     transform: scale(1.03);
 }
 
+/* * Section general min-width: 768px */
+
 @media (min-width: 768px) {
 
-    /* TODO: General min-width 768px */
     :root {
         --padding-container: 80px 0;
     }
@@ -667,12 +738,12 @@ body {
     }
 
 
-    /* TODO: Nav min-width 768px */
+    /* * Section nav min-width: 768px */
     .nav__hamburguer {
         display: none;
     }
 
-    .nav__logo{
+    .nav__logo {
         height: 70px;
         width: auto;
         transition: all 0.3s ease 0s;
@@ -730,7 +801,7 @@ body {
         display: none;
     }
 
-    /* TODO: Hero min-width: 768px */
+    /* * Section Hero min-width: 768px */
 
     .hero__main {
         align-items: center;
@@ -765,23 +836,23 @@ body {
     }
 
 
-    /* TODO: features min-width: 768px */
+    /* * Section services min-width: 768px */
 
-    .features {
+    .services {
         grid-template-columns: 5% 1fr 1fr 5%;
     }
 
-    .features__content {
+    .services__content {
         grid-column: 2/4;
 
     }
 
-    .features__title {
+    .services__title {
         font-size: 2.5rem;
     }
 
 
-    .features__list {
+    .services__list {
         display: flex;
         justify-content: center;
         margin: 0 auto;
@@ -789,22 +860,22 @@ body {
         border-bottom: 2px solid var(--grayish-alpha);
     }
 
-    .features__element {
+    .services__element {
         border-top: none;
     }
 
-    .features__element:last-child {
+    .services__element:last-child {
         border-bottom: none;
     }
 
-    .features__tab {
+    .services__tab {
         padding: 1.5rem;
         position: relative;
         top: 2px;
     }
 
 
-    .features__article {
+    .services__article {
         display: grid;
         gap: 1rem;
         align-items: center;
@@ -812,39 +883,39 @@ body {
     }
 
 
-    .features__figure {
+    .services__figure {
         grid-column: 1/3;
         display: grid;
     }
 
-    .features__img {
+    .services__img {
         margin: auto;
     }
 
-    .features__figure::before {
+    .services__figure::before {
         top: 40%;
         height: unset;
         width: 70%;
         max-width: 550px;
     }
 
-    .features__texts {
+    .services__texts {
         width: 100%;
         margin-top: 0;
         text-align: left;
     }
 
-    .features__subtitle {
-
+    .services__subtitle {
         font-size: 2rem;
     }
 
 
-    .features__cta {
+    .services__cta {
         display: inline-block;
     }
 
-    /* TODO: download min-width: 768px */
+    /*  TODO: Section download min-width: 768px 
+        ?: Estilos version anterior, se guarda para reutilizar
 
     .download__title {
         font-size: 2.5rem;
@@ -874,13 +945,15 @@ body {
         margin-top: 4rem;
     }
 
-    /* TODO: article min-width: 768px */
+    */
+
+    /* * Section article min-width: 768px */
 
     .article__title {
         font-size: 2.5rem;
     }
 
-    /* TODO: joined min-width: 768px */
+    /* * Section joined min-width: 768px */
 
     .joined__title {
         font-size: 2.5rem;
@@ -895,7 +968,7 @@ body {
     }
 
 
-    /* TODO: footer min-width: 768px */
+    /* * Section footer min-width: 768px */
 
 
     .footer__container {
@@ -921,7 +994,7 @@ body {
 
 @media (min-width:1250px) {
 
-    /* TODO: Hero min-width:1250px */
+    /* * Section Hero min-width:1250px */
 
     .hero__main {
         width: 90%;
@@ -938,7 +1011,7 @@ body {
         grid-column: 1/2;
     }
 
-    /* TODO: Features min-width:1250px */
+    /* * Section Features min-width:1250px */
 
     .features {
         width: 90%;

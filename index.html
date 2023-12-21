@@ -5,14 +5,9 @@
       TODO: 1. Agregar información - empresa
               ?: Reunión para la información.
               ! Pendiente
-      TODO: 2. Agregar estilos - empresa
-              ?: Revisión de paleta colores.
-              * Corregido
-      TODO: 3. Agregar imagenes - empresa
-              ?: Favicon, logos, imagenes.
-              ! Pendiente
 
 <!--  ?: Pendientes desarrollo
+  
       ? 1. Rutas de navegación
             ! Pendiente
       ? 2. footer rediseñar
@@ -25,13 +20,12 @@
             ! Pendiente
       ? 6. ¿Sobre nosotros?.html 
             ! Pendiente 
-      ? 7. Cambio de nombres ( Clases )
-            ! Pendiente
-      ? 8. Revisión y cambio de nav hamburguer
+      ? 7. Revisión y cambio de nav hamburguer
             ! Pendiente
 -->
 
 <!-- TODO: Head-->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,12 +38,14 @@
 </head>
 
 <!-- TODO: Body-->
+
 <body>
 
   <!-- TODO: Header-->
-  <header class="hero">
 
+  <header class="hero">
     <!-- TODO: Nav-->
+
     <nav class="nav container">
 
       <figure class="nav__figure">
@@ -77,7 +73,6 @@
           </li>
 
           <li class="nav__element">
-            <!-- ?: Agregar efectos de selección -->
             <a href="#" class="nav__link nav__link--last">Login</a>
           </li>
 
@@ -97,10 +92,10 @@
 
       </div>
 
-
     </nav>
 
     <!-- TODO: Header first Section -->
+
     <section class="hero__main container">
 
       <figure class="hero__figure">
@@ -108,18 +103,18 @@
       </figure>
 
       <article class="hero__texts">
+
         <h1 class="hero__title"> A Simple Bookmark Manager</h1>
         <p class="hero__paragraph"> A clean and simple interface to organize your favourite websites. Open a new
           browser tab and see your sites load instantly. Try it for free.</p>
 
         <div class="hero__buttons">
-          
-          <!-- ?: Agergar efectos de selección -->
-          <a href="#" class="hero__button"> Get it on Chrome</a>
 
-          <!-- ?: Agergar efectos de selección -->
+          <a href="#" class="hero__button"> Get it on Chrome</a>
           <a href="#" class="hero__button hero__button--white"> Get it on Firefox</a>
+
         </div>
+
       </article>
 
     </section>
@@ -127,30 +122,32 @@
   </header>
 
   <!-- TODO: Main -->
+
   <main class="main">
 
-    <!-- TODO: Section features -->
-    <section class="features container">
+    <!-- TODO: Section services -->
 
-      <div class="features__content">
+    <section class="services container">
 
-        <h2 class="features__title">Features</h2>
-        <p class="features__paragraph">Our aim is to make it quick and easy for you to access your favourite websites.
+      <div class="services__content">
+
+        <h2 class="services__title">Features</h2>
+        <p class="services__paragraph">Our aim is to make it quick and easy for you to access your favourite websites.
           Your bookmarks sync between your devices so you can access them on the go.</p>
 
-        <ul class="features__list">
+        <ul class="services__list">
 
-          <li class="features__element">
-            <a href="#" class="features__tab features__tab--active" data-article="1">Simple Bookmarking</a>
+          <li class="services__element">
+            <a href="#" class="services__tab services__tab--active" data-article="1">Simple Bookmarking</a>
           </li>
 
-          <li class="features__element">
-            <a href="#" class="features__tab" data-article="2">Speedy Searching
+          <li class="services__element">
+            <a href="#" class="services__tab" data-article="2">Speedy Searching
             </a>
           </li>
 
-          <li class="features__element">
-            <a href="#" class="features__tab" data-article="3">Easy Sharing
+          <li class="services__element">
+            <a href="#" class="services__tab" data-article="3">Easy Sharing
             </a>
           </li>
 
@@ -158,75 +155,141 @@
 
       </div>
 
-      <div class="features__container">
+      <div class="services__container">
 
-        <article class="features__article features__article--active">
+        <article class="services__article services__article--active">
 
-          <figure class="features__figure">
+          <figure class="services__figure">
 
-            <img src="./images/recursos/design-features-1.png" class="features__img">
+            <img src="./images/recursos/design-features-1.png" class="services__img">
 
           </figure>
 
-          <div class="features__texts">
+          <div class="services__texts">
 
-            <h3 class="features__subtitle"> Bookmark in one click</h3>
-            <p class="features__copy"> Organize your bookmarks however you like. Our simple drag-and-drop interface
+            <h3 class="services__subtitle"> Bookmark in one click</h3>
+            <p class="services__copy"> Organize your bookmarks however you like. Our simple drag-and-drop interface
               gives you complete control over how you manage your favourite sites.</p>
-            <a href="#" class="features__cta">More Info</a>
+            <a href="#" class="services__cta">More Info</a>
 
           </div>
 
         </article>
 
-        <article class="features__article">
+        <article class="services__article">
 
-          <figure class="features__figure">
+          <figure class="services__figure">
 
-            <img src="./images/recursos/design-features-2.png" class="features__img">
+            <img src="./images/recursos/design-features-2.png" class="services__img">
 
           </figure>
 
-          <div class="features__texts">
+          <div class="services__texts">
 
-            <h3 class="features__subtitle"> Intelligent search</h3>
-            <p class="features__copy"> Our powerful search feature will help you find saved sites in no time at all.
+            <h3 class="services__subtitle"> Intelligent search</h3>
+            <p class="services__copy"> Our powerful search feature will help you find saved sites in no time at all.
               No need to trawl through all of your bookmarks.</p>
-            <!-- ?: Agregar efectos de selección -->
-            <a href="#" class="features__cta">More Info</a>
+            <a href="#" class="services__cta">More Info</a>
 
           </div>
 
         </article>
 
+        <article class="services__article">
 
-        <article class="features__article">
+          <figure class="services__figure">
 
-          <figure class="features__figure">
-
-            <img src="./images/recursos/design-features-3.png" class="features__img">
+            <img src="./images/recursos/design-features-3.png" class="services__img">
 
           </figure>
 
-          <div class="features__texts">
+          <div class="services__texts">
 
-            <h3 class="features__subtitle">Share your bookmarks
-            </h3>
-            <p class="features__copy">Easily share your bookmarks and collections with others. Create a shareable
+            <h3 class="services__subtitle">Share your bookmarks</h3>
+
+            <p class="services__copy">Easily share your bookmarks and collections with others. Create a shareable
               link that you can send at the click of a button.</p>
-            <a href="#" class="features__cta">More Info</a>
+            <a href="#" class="services__cta">More Info</a>
 
           </div>
 
         </article>
-
 
       </div>
 
     </section>
 
-    <!-- TODO: Section Download -->
-    <section class="download container">
+    <!-- TODO: Section  -->
+
+    <section class="price container">
+
+      <h2 class="price__subtitle">Obten el plan perfecto para aprender</h2>
+
+      <p class="price__paragraph">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis debitis vitae iusto sit accusamus doloremque
+        rerum amet saepe et quidem. Quibusdam officia, illo ratione esse deserunt doloribus quam laborum in.
+      </p>
+
+      <div class="price__table">
+
+        <div class="price__element">
+
+          <p class="price__name">Flexbox</p>
+          <h3 class="price__price">Free</h3>
+
+          <div class="price__items">
+
+            <p class="price__features">Flexbox</p>
+            <p class="price__features">Layouts</p>
+            <p class="price__features">Responsive</p>
+
+          </div>
+
+          <a href="#" class="price__cta">Empieza ahora</a>
+
+        </div>
+
+
+        <div class="price__element price__element--best">
+
+          <p class="price__name">Grid</p>
+          <h3 class="price__price">$30/mes</h3>
+
+          <div class="price__items">
+
+            <p class="price__features">Grid</p>
+            <p class="price__features">Implicit Grid</p>
+            <p class="price__features">Responsive</p>
+
+          </div>
+
+          <a href="#" class="price__cta">Empieza ahora</a>
+
+        </div>
+
+
+        <div class="price__element">
+
+          <p class="price__name">Animaciones</p>
+
+          <h3 class="price__price">$40/mes</h3>
+
+          <div class="price__items">
+
+            <p class="price__features">Animation</p>
+            <p class="price__features">Transition</p>
+            <p class="price__features">Render Website</p>
+
+          </div>
+
+          <a href="#" class="price__cta">Empieza ahora</a>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- <section class="download container">
 
       <h2 class="download__title"> Download the extension</h2>
       <p class="download__paragraph"> We’ve got more browsers in the pipeline. Please do let us know if you’ve
@@ -243,7 +306,6 @@
 
           <h3 class="download__browser"> Add to Service 1 </h3>
           <p class="download__version"> descripción de servicio </p>
-          <!-- ?: Agregar efectos de selección -->
           <a href="#" class="download__extension"> More Info </a>
 
         </article>
@@ -256,7 +318,6 @@
 
           <h3 class="download__browser"> Add to Service 2 </h3>
           <p class="download__version"> descripción de servicio </p>
-          <!-- ?: Agregar efectos de selección -->
           <a href="#" class="download__extension"> More Info </a>
 
         </article>
@@ -269,17 +330,13 @@
 
           <h3 class="download__browser"> Add to Service 3 </h3>
           <p class="download__version"> descripción de servicio </p>
-          <!-- ?: Agregar efectos de selección -->
           <a href="#" class="download__extension"> More Info </a>
-
         </article>
-
-
       </div>
-
-    </section>
+    </section> -->
 
     <!-- TODO: Section Answer -->
+
     <section class="article container">
 
       <h2 class="article__title"> Frequently Asked Questions</h2>
@@ -293,10 +350,14 @@
         </h3>
 
         <article class="article__content">
+
           <div class="article__show ">
+
             <p class="article__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
               justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+
           </div>
+
         </article>
 
         <h3 class="article__question">How can I request a new browser?
@@ -304,6 +365,7 @@
         </h3>
 
         <article class="article__content">
+
           <div class="article__show">
 
             <p class="article__answer"> Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies
@@ -321,11 +383,14 @@
         </h3>
 
         <article class="article__content">
+
           <div class="article__show">
+
             <p class="article__answer">
               Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
               urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
               sollicitudin ex et ultricies bibendum.</p>
+
           </div>
 
         </article>
@@ -335,36 +400,40 @@
         </h3>
 
         <article class="article__content">
+
           <div class="article__show">
+
             <p class="article__answer"> Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at
               euismod dui. Aliquam
               vitae neque eget nisl gravida pellentesque non ut velit.</p>
+
           </div>
 
         </article>
 
-
       </div>
 
-      <!--  ?: Agregar efectos de selección 
-            !: Modificar el estilo border-radius -->
       <a href="#" class="article__cta">More Info</a>
 
     </section>
 
     <!-- TODO: Section Joined-->
+
     <section class="joined">
 
       <div class="joined__container container">
+
         <p class="joined__paragraph"> 35,000+ already joined</p>
+
         <h2 class="joined__title">Stay up-to-date with what we’re doing</h2>
 
         <form class="joined__form">
-          <input type="email" placeholder="Enter Your Email Addres" class="joined__input">
 
-          <!-- ?: Agregar efectos de selección, efectos de pointer -->
+          <input type="email" placeholder="Enter Your Email Addres" class="joined__input">
           <input type="submit" value="Contact Us" class="joined__submit">
+
         </form>
+
       </div>
 
     </section>
@@ -384,9 +453,11 @@
         <li class="footer__item">
           <a href="#" class="footer__link"> Features</a>
         </li>
+
         <li class="footer__item">
           <a href="#" class="footer__link"> Pricing</a>
         </li>
+
         <li class="footer__item">
           <a href="#" class="footer__link"> Contact</a>
         </li>
@@ -398,6 +469,7 @@
         <a href="#" class="footer__social">
           <img src="./images/icon-facebook.svg" class="footer__icon">
         </a>
+
         <a href="#" class="footer__social">
           <img src="./images/icon-twitter.svg" class="footer__icon">
         </a>

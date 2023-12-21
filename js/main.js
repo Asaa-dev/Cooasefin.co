@@ -1,7 +1,7 @@
 // TODO: Declaración de variables
 const navButton = document.querySelector('.nav__button');
 const navMenu = document.querySelector('.nav__container');
-const tabButttons = document.querySelectorAll('.features__tab');
+const tabButttons = document.querySelectorAll('.services__tab');
 
 const clickQuestions = document.querySelectorAll('.article__question');
 
@@ -44,20 +44,20 @@ tabButttons.forEach(tabButton =>{
     tabButton.addEventListener('click', (e)=>{
         e.preventDefault();
 
-        if(!tabButton.classList.contains('features__tab--active')){
+        if(!tabButton.classList.contains('services__tab--active')){
             
             const articleNumber = tabButton.getAttribute('data-article');
 
-            const articleShow = document.querySelector(`.features__article:nth-of-type(${articleNumber})`);
+            const articleShow = document.querySelector(`.services__article:nth-of-type(${articleNumber})`);
 
             console.log(articleNumber);
 
-            removeActiveElements('features__article--active');
-            removeActiveElements('features__tab--active');
+            removeActiveElements('services__article--active');
+            removeActiveElements('services__tab--active');
 
 
-            articleShow.classList.add('features__article--active');
-            tabButton.classList.add('features__tab--active');
+            articleShow.classList.add('services__article--active');
+            tabButton.classList.add('services__tab--active');
 
         }
     })
