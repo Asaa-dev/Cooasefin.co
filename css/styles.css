@@ -55,6 +55,7 @@ body {
     align-items: center;
     justify-content: space-between;
 
+
     --padding-container: 0;
 }
 
@@ -222,16 +223,15 @@ body {
     color: white;
     text-decoration: none;
     padding: 1rem;
-    font-weight: 500;
     border-radius: 4px;
-
+    font-weight: 500;
     box-shadow: -5px 2px 3px var(--grayish-alpha);
     transition: all 0.3s ease 0s;
 }
 
 .hero__button--white {
     background-color: white;
-    color: var(--grayish);
+    color: var(--very-dark);
     transition: all 0.3s ease 0s;
 }
 
@@ -389,23 +389,23 @@ body {
 
 /* * Section: Price */
 
-.price {
+.rates {
     width: 90%;
     text-align: center;
 }
 
-.price__subtitle {
+.rates__subtitle {
     color: var(--very-dark);
     font-size: 1.7rem;
 }
 
-.price__paragraph {
+.rates__paragraph {
     color: var(--grayish);
     margin: 1rem auto 2.5rem;
     max-width: 700px;
 }
 
-.price__table {
+.rates__table {
     padding-top: 60px;
     display: flex;
     flex-wrap: wrap;
@@ -414,7 +414,7 @@ body {
     align-items: center;
 }
 
-.price__element {
+.rates__element {
     background-color: var(--soft-white);
     text-align: center;
     border-radius: 10px;
@@ -427,7 +427,7 @@ body {
     --color-items: var(--dark-light-gray);
 }
 
-.price__element--best {
+.rates__element--best {
     width: 370px;
     padding: 60px 40px;
     background-color: var(--dark-light-purple);
@@ -439,18 +439,18 @@ body {
 }
 
 
-.price__name {
+.rates__name {
     color: var(--color-plan);
     margin-bottom: 15px;
     font-weight: 300;
 }
 
-.price__price {
+.rates__price {
     font-size: 2.5rem;
     color: var(--color-price);
 }
 
-.price__items {
+.rates__items {
     margin-top: 35px;
     display: grid;
     gap: 1em;
@@ -460,7 +460,7 @@ body {
     color: var(--color-items);
 }
 
-.price__cta {
+.rates__cta {
     display: block;
     padding: 20px 0;
     border-radius: 10px;
@@ -470,81 +470,9 @@ body {
     transition: all 0.3s ease 0s;
 }
 
-.price__cta:hover {
+.rates__cta:hover {
     transform: scale(1.03);
 }
-
-/* * Section: Download */
-
-.download {
-    width: 90%;
-    text-align: center;
-}
-
-.download__title {
-    font-size: 1.7rem;
-    color: var(--very-dark);
-}
-
-.download__paragraph {
-    color: var(--grayish);
-    margin: 1rem auto 2.5rem;
-    max-width: 400px;
-}
-
-.download__container {
-    width: 97%;
-    margin: 3rem auto 0;
-    max-width: 400px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-}
-
-.download__item {
-    box-shadow: 0 3px 6px var(--grayish-alpha);
-    padding: 2.5rem 0;
-    border-radius: 12px;
-}
-
-.download__img {
-    width: 50%;
-    max-width: 120px;
-    margin: 0 auto;
-}
-
-.download__browser {
-    margin-top: 30px;
-    color: var(--very-dark);
-    font-size: 1.4rem;
-}
-
-.download__version {
-    margin-top: 1rem;
-    padding-bottom: 2rem;
-    border-bottom: 6px;
-    color: var(--grayish);
-    line-height: 1.5;
-}
-
-.download__extension {
-    display: block;
-    width: 90%;
-    background-color: var(--dark-light-purple);
-    margin: 1.3rem auto 0;
-    color: white;
-    text-decoration: none;
-    padding: 1rem 0;
-    border-radius: 4px;
-    transition: all 0.3s ease 0s;
-}
-
-.download__extension:hover {
-    background-color: var(--soft-purple-basic);
-    transform: scale(1.03);
-}
-
 
 /* * Section: Article */
 
@@ -674,6 +602,7 @@ body {
     outline: none;
 }
 
+/* ! FIXME: Revisión colores */
 .joined__submit {
     background-color: var(--very-dark);
     color: var(--grayish);
@@ -682,7 +611,9 @@ body {
 }
 
 .joined__submit:hover {
+    background-color: var(--very-dark);
     color: white;
+
 }
 
 /* * Section: Footer */
@@ -1212,35 +1143,11 @@ body {
     line-height: 1.5;
 }
 
-/* TODO: About.html - Min-width: 1250px */
-
-/* * Section: General */
-
-@media (min-width:1250px) {
-
-    /* * Section: About */
-
-    .about__main {
-        width: 90%;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .about__figure {
-        grid-column: span 1/-1;
-        grid-row: 1/2;
-    }
-
-    .about__texts {
-        grid-row: 1/2;
-        grid-column: 1/2;
-    }
-}
-
 /* TODO: About.html - min-width: 768px) */
 
-/* * Section: General */
-
 @media (min-width: 768px) {
+
+    /* * Section: General */
 
     :root {
         --padding-container: 80px 0;
@@ -1283,6 +1190,7 @@ body {
     .about__paragraph {
         margin: 1.5rem 0;
     }
+    
 
     /* * Section: Planning */
 
@@ -1350,3 +1258,25 @@ body {
     }
 
 }
+
+/* TODO: About.html - Min-width: 1250px */
+@media (min-width:1250px) {
+
+    /* * Section: About */
+
+    .about__main {
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about__figure {
+        grid-column: span 1/-1;
+        grid-row: 1/2;
+    }
+
+    .about__texts {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+}
+
