@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Coasefin.co</title>
+    <title>Cooasefin.co</title>
 
     <link rel="shortcut icon" href="./favicon/Coasefin-favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
@@ -17,10 +18,13 @@
 
 <body>
     <!-- TODO: Cambios generales 
+        
+            ? Pendiente Reunión
             ? 1. Cambio de información en secciónes que lo requieran 
             ? 2. Agregar información empresa 
             ? 3. Revisión general 
-        ! FIXME: Revisión de tamaño de fuente adecuada para la pagina, la fuente actual es muy grande. -->
+
+            ! FIXME: Rutas de navegación
 
     <!-- TODO: Sectión Nav -->
     <nav class="nav container">
@@ -70,15 +74,18 @@
             <img src="./images/recursos/hero-about-img.png" class="about__img">
         </figure>
 
-        <!-- ! FIXME: Error en boton no se visualiza de forma responsiva, agregar estilos -->
         <article class="portfolio_about__texts">
-            <h1>Lorem.</h1>
+            <h1 class="portfolio__span">Lorem.</h1>
             <h2 class="portfolio_about__title"> Lorem, ipsum. </h2>
             <p class="portfolio_about__paragraph"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
                 accusamus nisi
                 asperiores dolorem delectus odit expedita voluptates magnam fugit aliquam nulla quidem, necessitatibus
                 commodi modi porro saepe quibusdam tenetur dolores?</p>
-            <a href="#" class="portfolio_about__cta"> More info </a>
+
+            <div class="portfolio__buttons">
+                <a href="#" class="portfolio_about__cta"> More info </a>
+            </div>
+
         </article>
 
 
@@ -115,7 +122,7 @@
 
                 <h3 class="portfolio__subtitle"> Lorem. 2 </h3>
                 <p class="portfolio__description"> Lorem ipsum dolor sit amet. </p>
-                <a href="#" class="portfolio__button">Lorem, ipsum dolor.</a>
+                <a href="#" class="portfolio__button--active">Lorem, ipsum dolor.</a>
 
             </article>
 
@@ -144,16 +151,17 @@
                 <img src="./images/recursos/services-about-img.png" class="legal__img">
             </figure>
 
-            <!--    ! FIXME: Error en boton no se visualiza de forma responsiva, agregar estilos 
-                    ! Revisión de div -->
             <div class="legal__texts">
                 <h1>Lorem.</h1>
-                <h2 class="legal__subtitle">Lorem, ipsum.</h2>
+                <h2 class="legal__title">Lorem, ipsum.</h2>
                 <p class="legal__copy"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit temporibus at
                     a labore eos veniam iusto, molestias dignissimos culpa explicabo repellat architecto dolorem id aut!
                     Est quaerat similique suscipit unde?</p>
-                    <br>
-                <a href="#" class="legal__cta"> More info </a>
+                <br>
+
+                <div class="legal__buttons">
+                    <a href="#" class="legal__cta"> More info </a>
+                </div>
             </div>
 
         </article>
@@ -167,15 +175,85 @@
             <img src="./images/recursos/hero-about-img.png" class="credit__img">
         </figure>
 
-        <!-- ! FIXME: Error en boton no se visualiza de forma responsiva, agregar estilos -->
         <article class="credit__texts">
-            <h1>Lorem.</h1>
+            <h1 class="credit__span">Lorem.</h1>
             <h2 class="credit__title">Lorem, ipsum.</h2>
             <p class="credit__paragraph"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo accusamus nisi
                 asperiores dolorem delectus odit expedita voluptates magnam fugit aliquam nulla quidem, necessitatibus
                 commodi modi porro saepe quibusdam tenetur dolores?</p>
-            <a href="#" class="credit__cta"> More info </a>
+            <div class="credit__buttons">
+                <a href="#" class="credit__cta"> More info </a>
+            </div>
         </article>
+
+    </section>
+
+    <!-- TODO: Section Questions -->
+    <section class="questions container">
+
+        <h2 class="questions__header">Lorem ipsum dolor sit amet.</h2>
+        <p class="questions__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam nesciunt,
+            quod distinctio harum molestias!</p>
+
+        <section class="questions__container">
+
+            <article class="questions__padding">
+
+                <div class="questions__answer">
+                    <h3 class="questions__title">Lorem.
+                        <span class="questions__arrow">
+                            <img src="./svg/angle-small-up.svg" class="questions__img">
+                        </span>
+                    </h3>
+
+                    <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                        facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                        eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                        amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                        nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                        quam atque?</p>
+                </div>
+
+            </article>
+
+            <article class="questions__padding">
+
+                <div class="questions__answer">
+                    <h3 class="questions__title">Lorem, ipsum.
+                        <span class="questions__arrow">
+                            <img src="./svg/angle-small-up.svg" class="questions__img">
+                        </span>
+                    </h3>
+
+                    <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                        facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                        eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                        amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                        nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                        quam atque?</p>
+                </div>
+
+            </article>
+
+            <article class="questions__padding">
+
+                <div class="questions__answer">
+                    <h3 class="questions__title">Lorem, ipsum dolor.
+                        <span class="questions__arrow">
+                            <img src="./svg/angle-small-up.svg" class="questions__img">
+                        </span>
+                    </h3>
+
+                    <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                        facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                        eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                        amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                        nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                        quam atque?</p>
+                </div>
+
+            </article>
+        </section>
 
     </section>
 
@@ -184,13 +262,15 @@
 
         <div class="joined__container container">
 
-            <p class="joined__paragraph"> 35,000+ already joined</p>
-            <h2 class="joined__title">Stay up-to-date with what we’re doing</h2>
+            <p class="joined__paragraph"> Example: 35,000+ already joined</p>
+            <h2 class="joined__title">Example: Stay up-to-date with what we’re doing</h2>
 
             <form class="joined__form">
-
                 <input type="email" placeholder="Enter Your Email Addres" class="joined__input">
-                <input type="submit" value="Contact Us" class="joined__submit">
+
+                <div class="joined__buttons">
+                    <input type="submit" value="Contact Us" class="joined__submit">
+                </div>
 
             </form>
 
@@ -202,7 +282,6 @@
 
     <!-- TODO: Sectión footer -->
     <footer class="footer">
-
         <div class="footer__container container">
 
             <figure class="footer__figure">
@@ -240,10 +319,11 @@
             </div>
 
         </div>
-
     </footer>
 
+    <!-- TODO: Section JS -->
     <script src="./js/main.js"></script>
+    <script src="./js/questions.js"></script>
 
 </body>
 
