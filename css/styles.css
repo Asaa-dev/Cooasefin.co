@@ -1051,16 +1051,16 @@ body {
 .planning__figure::before {
     content: "";
     position: absolute;
-    background: linear-gradient(to left,
+    background: linear-gradient(to right,
             var(--dark-purple),
             var(--dark-light-purple));
-    height: 150px;
-    width: 50%;
+    width: 60%;
     max-width: 450px;
-    bottom: 0;
+    bottom: 30px;
+    top: 30%;
     left: 0;
-    border-radius: 20px 100px 100px 20px;
 
+    border-radius: 20px 100px 100px 20px;
     z-index: -1;
 
 }
@@ -1087,55 +1087,96 @@ body {
 /*  * Section: Values */
 
 .values {
-    width: 90%;
     text-align: center;
 }
 
-.values__title {
-    font-size: 1.7rem;
-    color: var(--very-dark);
+.values__subtitle {
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
 }
+
 
 .values__paragraph {
-    color: var(--grayish);
-    margin: 1rem auto 2.5rem;
-    max-width: 400px;
+    line-height: 1.7;
 }
 
-.values__container {
-    width: 97%;
-    margin: 3rem auto 0;
-    max-width: 400px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
+.values__main {
+    padding-top: 80px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
 }
 
-.values__item {
-    box-shadow: 0 3px 6px var(--grayish-alpha);
-    padding: 2.5rem 0;
-    border-radius: 12px;
-}
 
-.values__img {
-    width: 50%;
-    max-width: 120px;
+.values__icons {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 260px;
+    overflow: hidden;
     margin: 0 auto;
 }
 
-.values__subtitle {
-    margin-top: 30px;
-    color: var(--very-dark);
-    font-size: 1.4rem;
+.values__icon {
+    width: 40px;
 }
 
-.values__description {
-    margin-top: 1rem;
-    padding-bottom: 2rem;
-    border-bottom: 6px;
-    color: var(--grayish);
-    line-height: 1.5;
+/* * Section: Testimony */
+
+.testimony__container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+}
+
+.testimony__body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.testimony__body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.testimony__img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.testimony__texts{
+    max-width: 700px;
+}
+
+.testimony__course{
+    background-color: var(--soft-purple-basic);
+    color: #fff;
+    display: inline-block;
+    padding: 2.5px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.testimony__arrow{
+    width: 90%;
+    cursor: pointer;
 }
 
 /* TODO: About.html - min-width: 768px) */
@@ -1205,8 +1246,7 @@ body {
     }
 
     .planning__figure::before {
-        top: 40%;
-        height: unset;
+        bottom: 0;
         width: 70%;
         max-width: 600px;
     }
@@ -1221,35 +1261,66 @@ body {
         font-size: 2rem;
     }
 
-    /* * Section: Values */
+    /* * Section: Testimony */
 
-    .values__title {
-        font-size: 2.5rem;
+    .testimony{
+        --padding-container: 60px 0;
     }
 
-    .values__container {
+    .testimony__container{
+        grid-template-columns: 28px 1fr 28px;
+        gap: .9em;
+    }
+
+    .testimony__arrow{
         width: 100%;
-        max-width: unset;
-        margin: 4rem auto 0;
-        padding: 0 2rem;
-
-        gap: 2rem;
-        flex-direction: row;
-        align-items: flex-start;
     }
 
-    .values__item {
-        flex: 1;
+    .testimony__course{
+        margin-top: 15px;
     }
 
-    .values__item:nth-child(2) {
-        margin-top: 2rem;
+}
+
+@media (max-width: 820px) {
+
+    /* * Section: General */
+
+    :root {
+        --padding-container: 80px 0;
     }
 
-    .values__item:nth-child(3) {
-        margin-top: 4rem;
+    img {
+        display: block;
     }
 
+    .values__main{
+        gap: 2em;
+    }
+
+    .values__icons:last-of-type{
+        grid-column: 1/-1;
+    }
+
+    /* * Section: Testimony */
+
+    .testimony__container{
+        grid-template-columns: 30px 1fr 30px;
+    }
+
+    .testimony__body{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        gap: 3em;
+        justify-items:center ;
+    }
+
+
+    .testimony__img{
+        width: 200px;
+        height: 200px;
+        
+    }
 }
 
 /* TODO: About.html - Min-width: 1250px */
