@@ -120,7 +120,6 @@ body {
 .nav__link {
     color: var(--grayish);
     text-decoration: none;
-    text-transform: uppercase;
     display: block;
     font-weight: 500;
     transition: all 0.3s ease 0s;
@@ -204,18 +203,21 @@ body {
 .hero__title {
     font-size: 2rem;
     color: var(--very-dark);
+    padding-left: 10px;
 }
 
 .hero__paragraph {
     color: var(--grayish);
     line-height: 1.5;
     margin: 1.3rem 0;
+    padding-left: 10px;
 }
 
 .hero__buttons {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    padding-left: 10px;
 }
 
 .hero__button {
@@ -225,13 +227,12 @@ body {
     padding: 1rem;
     border-radius: 4px;
     font-weight: 500;
-    box-shadow: -5px 2px 3px var(--grayish-alpha);
     transition: all 0.3s ease 0s;
 }
 
 .hero__button--white {
-    background-color: white;
-    color: var(--very-dark);
+    background-color: var(--very-dark);
+    color: white;
     transition: all 0.3s ease 0s;
 }
 
@@ -250,6 +251,9 @@ body {
 /* * Section: Services */
 
 .services {
+    width: 100%;
+    --padding-container: 40px 0 60px;
+
     display: grid;
     grid-template-columns: 5% 1fr 5%;
 }
@@ -328,27 +332,27 @@ body {
     position: relative;
 }
 
+.services__figure::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to right,
+            var(--dark-purple),
+            var(--dark-light-purple));
+    width: 60%;
+    max-width: 450px;
+    bottom: 30px;
+    top: 30%;
+    left: 0;
+
+    border-radius: 20px 100px 100px 20px;
+    z-index: -1;
+
+}
+
 .services__img {
     width: 80%;
     margin: 0 auto;
     max-width: 450px;
-}
-
-.services__figure::before {
-    content: "";
-    position: absolute;
-    background: linear-gradient(to left,
-            var(--dark-purple),
-            var(--dark-light-purple));
-    height: 150px;
-    width: 50%;
-    max-width: 450px;
-    bottom: 0;
-    left: 0;
-    border-radius: 20px 100px 100px 20px;
-
-    z-index: -1;
-
 }
 
 .services__texts {
@@ -370,12 +374,17 @@ body {
     margin-top: 1.2rem;
 }
 
+.services__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
 .services__cta {
-    display: none;
-    margin-top: 1.2rem;
     padding: 1rem 1.5rem;
+    margin-top: 1.2rem;
     background-color: var(--dark-light-purple);
-    border-radius: 3px;
+    border-radius: 4px;
     text-decoration: none;
     color: white;
     transition: all 0.3s ease 0s;
@@ -387,21 +396,22 @@ body {
     transform: scale(1.03);
 }
 
-/* * Section: Price */
+/* * Section: Rates */
 
 .rates {
     width: 90%;
     text-align: center;
 }
 
-.rates__subtitle {
-    color: var(--very-dark);
+.rates__title {
     font-size: 1.7rem;
+    color: var(--very-dark);
 }
 
 .rates__paragraph {
+    line-height: 1.5;
     color: var(--grayish);
-    margin: 1rem auto 2.5rem;
+    margin: 1rem auto 1rem;
     max-width: 700px;
 }
 
@@ -496,8 +506,9 @@ body {
 }
 
 .article__paragraph {
+    line-height: 1.5;
     color: var(--grayish);
-    margin: 1rem auto 2.5rem;
+    margin: 1rem auto 1rem;
     max-width: 400px;
 }
 
@@ -597,15 +608,18 @@ body {
 .joined__submit {
     padding: 1rem;
     font: inherit;
-    border-radius: 3px;
+    border-radius: 5px;
     border: none;
     outline: none;
 }
 
-/* ! FIXME: Revisión colores */
+.joined__buttons {
+    padding-right: 10px;
+}
+
 .joined__submit {
     background-color: var(--very-dark);
-    color: var(--grayish);
+    color: white;
     transition: all 0.3s ease 0s;
     cursor: pointer;
 }
@@ -613,7 +627,7 @@ body {
 .joined__submit:hover {
     background-color: var(--very-dark);
     color: white;
-
+    transform: scale(1.03);
 }
 
 /* * Section: Footer */
@@ -645,7 +659,6 @@ body {
     color: white;
     text-decoration: none;
     letter-spacing: 2px;
-    text-transform: uppercase;
     transition: all 0.3s ease 0s;
 }
 
@@ -667,9 +680,9 @@ body {
 
 /* TODO: Index.html - Min-width: 768px */
 
-/* * Section: General */
-
 @media (min-width: 768px) {
+
+    /* * Section: General */
 
     :root {
         --padding-container: 80px 0;
@@ -724,7 +737,7 @@ body {
 
     .nav__link:hover {
         color: var(--very-dark);
-        transform: scale(1.07);
+        transform: scale(1.03);
     }
 
     .nav__link--last {
@@ -732,11 +745,11 @@ body {
         color: white;
         padding: .6rem 1.5rem;
         background-color: var(--dark-light-purple);
-        box-shadow: -5px 2px 3px var(--grayish);
     }
 
     .nav__link--last:hover {
         color: white;
+        transform: scale(1.03);
     }
 
     .nav__social {
@@ -775,6 +788,10 @@ body {
 
     .hero__paragraph {
         margin: 1.5rem 0;
+    }
+
+    .hero__buttons {
+        justify-content: flex-start;
     }
 
     /* * Section: Services */
@@ -829,15 +846,15 @@ body {
         display: grid;
     }
 
-    .services__img {
-        margin: auto;
+    .services__figure::before {
+        bottom: 0;
+        width: 70%;
+        max-width: 600px;
     }
 
-    .services__figure::before {
-        top: 40%;
-        height: unset;
-        width: 70%;
-        max-width: 550px;
+    .services__img {
+        margin: auto;
+
     }
 
     .services__texts {
@@ -855,34 +872,14 @@ body {
         display: inline-block;
     }
 
-    /* * Section: Download */
+    .services__buttons {
+        justify-content: flex-start;
+    }
 
-    .download__title {
+    /* * Section: Rates */
+
+    .rates__title {
         font-size: 2.5rem;
-    }
-
-
-    .download__container {
-        width: 100%;
-        max-width: unset;
-        margin: 4rem auto 0;
-        padding: 0 2rem;
-
-        gap: 2rem;
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    .download__item {
-        flex: 1;
-    }
-
-    .download__item:nth-child(2) {
-        margin-top: 2rem;
-    }
-
-    .download__item:nth-child(3) {
-        margin-top: 4rem;
     }
 
     /* * Section: Article */
@@ -905,9 +902,7 @@ body {
         flex: 1;
     }
 
-
     /* * Section: Footer */
-
 
     .footer__container {
         display: flex;
@@ -955,18 +950,17 @@ body {
 
     /* * Section: Features */
 
-    .features {
+    .services {
         width: 90%;
         grid-template-columns: 1fr 1fr;
     }
 
-    .features__content {
+    .services__content {
         grid-column: 1/-1;
     }
 }
 
 /*  TODO: Estilos About.html */
-
 
 /*  * Section: About */
 
@@ -1192,7 +1186,6 @@ body {
         margin: 1.5rem 0;
     }
 
-
     /* * Section: Planning */
 
     .planning__article {
@@ -1233,7 +1226,6 @@ body {
     .values__title {
         font-size: 2.5rem;
     }
-
 
     .values__container {
         width: 100%;
@@ -1749,8 +1741,6 @@ body {
     img {
         display: block;
     }
-
-
 }
 
 /* TODO: Services.html - min-width: 1250px) */
