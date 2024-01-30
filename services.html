@@ -2,7 +2,6 @@
 <html lang="en">
 
 <!-- TODO: Tareas pendientes
-     ! FIXME: Organizar estructura: Header, Main
      ? Pendiente Reunión
      ? Cambio de información en secciónes que lo requieran 
      ? Agregar información empresa 
@@ -10,6 +9,7 @@
      ! Rutas de navegación
 -->
 
+<!-- TODO: Head-->
 <head>
 
     <meta charset="UTF-8">
@@ -25,293 +25,245 @@
 
 </head>
 
+<!-- TODO: Body-->
 <body>
 
-    <!-- TODO: Nav -->
-    <nav class="nav container">
+    <!-- TODO: Header -->
+    <header class="hero">
 
-        <figure class="nav__figure">
-            <a href="#">
-                <img src="./favicon/Coasefin.ico" class="nav__logo">
-            </a>
-        </figure>
+        <!-- TODO: Nav -->
+        <nav class="nav container">
 
-        <div class="nav__hamburguer">
-            <img src="./images/icon-hamburger.svg" class="nav__button">
-        </div>
-
-        <div class="nav__container">
-            <ul class="nav__list container">
-                <li class="nav__element">
-                    <a href="#" class="nav__link">Features</a>
-                </li>
-                <li class="nav__element">
-                    <a href="#" class="nav__link">Pricing</a>
-                </li>
-                <li class="nav__element">
-                    <a href="#" class="nav__link">Contact</a>
-                </li>
-                <li class="nav__element">
-                    <a href="#" class="nav__link nav__link--last">Login</a>
-                </li>
-            </ul>
-
-            <div class="nav__social">
-                <a href="#" class="nav__media">
-                    <img src="./images/icon-facebook.svg" class="nav__socialme">
+            <figure class="nav__figure">
+                <a href="#">
+                    <img src="./favicon/Coasefin.ico" class="nav__logo">
                 </a>
-                <a href="#" class="nav__media">
-                    <img src="./images/icon-twitter.svg" class="nav__socialme">
-                </a>
-            </div>
-        </div>
-
-    </nav>
-
-    <!-- TODO: Portfolio_about-->
-    <section class="portfolio_about__main container">
-
-        <figure class="portfolio_about__figure">
-            <img src="./images/recursos/hero-about-img.png" class="about__img">
-        </figure>
-
-        <article class="portfolio_about__texts">
-            <h1 class="portfolio__span">Lorem.</h1>
-            <h2 class="portfolio_about__title"> Lorem, ipsum. </h2>
-            <p class="portfolio_about__paragraph"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-                accusamus nisi
-                asperiores dolorem delectus odit expedita voluptates magnam fugit aliquam nulla quidem, necessitatibus
-                commodi modi porro saepe quibusdam tenetur dolores?</p>
-
-            <div class="portfolio__buttons">
-                <a href="#" class="portfolio_about__cta"> More info </a>
-            </div>
-
-        </article>
-
-
-    </section>
-
-    <!-- TODO: Portfolio 
-         ? Pendiente para revisión y uso en otra vista.
-    -->
-    <!--<section class="portfolio container">
-
-        <h2 class="portfolio__title"> Lorem. </h2>
-        <h4>Lorem, ipsum. </h4>
-        <p class="portfolio__paragraph"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum fuga adipisci
-            minus labore quas placeat!
-        </p>
-
-        <div class="portfolio__container">
-
-            <article class="portfolio__item">
-
-                <figure class="portfolio__figure">
-                    <img src="./svg/face.svg" class="portfolio__img">
-                </figure>
-
-                <h3 class="portfolio__subtitle"> Lorem. 1 </h3>
-                <p class="portfolio__description"> Lorem ipsum dolor sit amet. </p>
-                <a href="#" class="portfolio__button">Lorem, ipsum dolor.</a>
-
-            </article>
-
-            <article class="portfolio__item">
-
-                <figure class="portfolio__figure">
-                    <img src="./svg/protected.svg" class="portfolio__img">
-                </figure>
-
-                <h3 class="portfolio__subtitle"> Lorem. 2 </h3>
-                <p class="portfolio__description"> Lorem ipsum dolor sit amet. </p>
-                <a href="#" class="portfolio__button--active">Lorem, ipsum dolor.</a>
-
-            </article>
-
-            <article class="portfolio__item">
-
-                <figure class="portfolio__figure">
-                    <img src="./svg/correct.svg" class="portfolio__img">
-                </figure>
-
-                <h3 class="portfolio__subtitle"> Lorem. 3 </h3>
-                <p class="portfolio__description"> Lorem ipsum dolor sit amet. </p>
-                <a href="#" class="portfolio__button">Lorem, ipsum dolor.</a>
-
-            </article>
-
-        </div>
-
-    </section>-->
-
-    <!-- TODO: Legal -->
-    <section class="legal__main container">
-
-        <article class="legal__article legal__article--active">
-
-            <figure class="legal__figure">
-                <img src="./images/recursos/services-about-img.png" class="legal__img">
             </figure>
 
-            <div class="legal__texts">
-                <h1>Lorem.</h1>
-                <h2 class="legal__title">Lorem, ipsum.</h2>
-                <p class="legal__copy"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit temporibus at
-                    a labore eos veniam iusto, molestias dignissimos culpa explicabo repellat architecto dolorem id aut!
-                    Est quaerat similique suscipit unde?</p>
-                <br>
-
-                <div class="legal__buttons">
-                    <a href="#" class="legal__cta"> More info </a>
-                </div>
+            <div class="nav__hamburguer">
+                <img src="./images/icon-hamburger.svg" class="nav__button">
             </div>
 
-        </article>
+            <div class="nav__container">
+                <ul class="nav__list container">
+                    <li class="nav__element">
+                        <a href="#" class="nav__link">Features</a>
+                    </li>
+                    <li class="nav__element">
+                        <a href="#" class="nav__link">Pricing</a>
+                    </li>
+                    <li class="nav__element">
+                        <a href="#" class="nav__link">Contact</a>
+                    </li>
+                    <li class="nav__element">
+                        <a href="#" class="nav__link nav__link--last">Login</a>
+                    </li>
+                </ul>
 
-    </section>
-
-    <!-- TODO: Portfolio -->
-    <section class="portfolio container">
-
-        <h2 class="portfolio__subtitle">Lorem, ipsum dolor.</h2>
-        <p class="portfolio__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, praesentium.</p>
-
-        <div class="portfolio__main">
-            <article class="portfolio__icons">
-                <img src="./svg/grafica.svg" class="portfolio__icon">
-                <h3 class="portfolio__title">Lorem.</h3>
-                <p class="portfolio__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
-                    porro eius facilis?</p>
-            </article>
-
-            <article class="portfolio__icons">
-                <img src="./svg/face.svg" class="portfolio__icon">
-                <h3 class="portfolio__title">Lorem.</h3>
-                <p class="portfolio__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
-                    porro eius facilis?</p>
-            </article>
-
-            <article class="portfolio__icons">
-                <img src="./svg/scatter-chart.svg" class="portfolio__icon">
-                <h3 class="portfolio__title">Lorem.</h3>
-                <p class="portfolio__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
-                    porro eius facilis?</p>
-            </article>
-        </div>
-
-    </section>
-
-    <!-- TODO: Credit -->
-    <section class="credit__main container">
-
-        <figure class="credit__figure">
-            <img src="./images/recursos/hero-about-img.png" class="credit__img">
-        </figure>
-
-        <article class="credit__texts">
-            <h1 class="credit__span">Lorem.</h1>
-            <h2 class="credit__title">Lorem, ipsum.</h2>
-            <p class="credit__paragraph"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo accusamus nisi
-                asperiores dolorem delectus odit expedita voluptates magnam fugit aliquam nulla quidem, necessitatibus
-                commodi modi porro saepe quibusdam tenetur dolores?</p>
-            <div class="credit__buttons">
-                <a href="#" class="credit__cta"> More info </a>
+                <div class="nav__social">
+                    <a href="#" class="nav__media">
+                        <img src="./images/icon-facebook.svg" class="nav__socialme">
+                    </a>
+                    <a href="#" class="nav__media">
+                        <img src="./images/icon-twitter.svg" class="nav__socialme">
+                    </a>
+                </div>
             </div>
-        </article>
+        </nav>
 
-    </section>
+        <!-- TODO: Portfolio_about-->
+        <section class="portfolio_about__main container">
 
-    <!-- TODO: Questions -->
-    <section class="questions container">
+            <figure class="portfolio_about__figure">
+                <img src="./images/recursos/hero-about-img.png" class="about__img">
+            </figure>
 
-        <h2 class="questions__header">Lorem ipsum dolor sit amet.</h2>
-        <p class="questions__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam nesciunt,
-            quod distinctio harum molestias!</p>
+            <article class="portfolio_about__texts">
+                <h1 class="portfolio__span">Lorem.</h1>
+                <h2 class="portfolio_about__title"> Lorem, ipsum. </h2>
+                <p class="portfolio_about__paragraph"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+                    accusamus nisi
+                    asperiores dolorem delectus odit expedita voluptates magnam fugit aliquam nulla quidem,
+                    necessitatibus
+                    commodi modi porro saepe quibusdam tenetur dolores?</p>
 
-        <section class="questions__container">
-
-            <article class="questions__padding">
-
-                <div class="questions__answer">
-                    <h3 class="questions__title">Lorem.
-                        <span class="questions__arrow">
-                            <img src="./svg/angle-small-up.svg" class="questions__img">
-                        </span>
-                    </h3>
-
-                    <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-                        facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
-                        eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
-                        amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
-                        nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
-                        quam atque?</p>
-                </div>
-
-            </article>
-
-            <article class="questions__padding">
-
-                <div class="questions__answer">
-                    <h3 class="questions__title">Lorem, ipsum.
-                        <span class="questions__arrow">
-                            <img src="./svg/angle-small-up.svg" class="questions__img">
-                        </span>
-                    </h3>
-
-                    <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-                        facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
-                        eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
-                        amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
-                        nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
-                        quam atque?</p>
-                </div>
-
-            </article>
-
-            <article class="questions__padding">
-
-                <div class="questions__answer">
-                    <h3 class="questions__title">Lorem, ipsum dolor.
-                        <span class="questions__arrow">
-                            <img src="./svg/angle-small-up.svg" class="questions__img">
-                        </span>
-                    </h3>
-
-                    <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-                        facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
-                        eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
-                        amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
-                        nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
-                        quam atque?</p>
+                <div class="portfolio__buttons">
+                    <a href="#" class="portfolio_about__cta"> More info </a>
                 </div>
 
             </article>
         </section>
+    </header>
 
-    </section>
+    <!-- TODO: Main -->
+    <main class="main">
 
-    <!-- TODO: Joined -->
-    <section class="joined">
+        <!-- TODO: Legal -->
+        <section class="legal__main container">
 
-        <div class="joined__container container">
+            <article class="legal__article legal__article--active">
+                <figure class="legal__figure">
+                    <img src="./images/recursos/services-about-img.png" class="legal__img">
+                </figure>
 
-            <p class="joined__paragraph"> Example: 35,000+ already joined</p>
-            <h2 class="joined__title">Example: Stay up-to-date with what we’re doing</h2>
+                <div class="legal__texts">
+                    <h1>Lorem.</h1>
+                    <h2 class="legal__title">Lorem, ipsum.</h2>
+                    <p class="legal__copy"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit temporibus at
+                        a labore eos veniam iusto, molestias dignissimos culpa explicabo repellat architecto dolorem id
+                        aut!
+                        Est quaerat similique suscipit unde?</p>
+                    <br>
 
-            <form class="joined__form">
-                <input type="email" placeholder="Enter Your Email Addres" class="joined__input">
-
-                <div class="joined__buttons">
-                    <input type="submit" value="Contact Us" class="joined__submit">
+                    <div class="legal__buttons">
+                        <a href="#" class="legal__cta"> More info </a>
+                    </div>
                 </div>
+            </article>
+        </section>
 
-            </form>
+        <!-- TODO: Portfolio -->
+        <section class="portfolio container">
 
-        </div>
+            <h2 class="portfolio__subtitle">Lorem, ipsum dolor.</h2>
+            <p class="portfolio__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, praesentium.
+            </p>
 
-    </section>
+            <div class="portfolio__main">
+                <article class="portfolio__icons">
+                    <img src="./svg/grafica.svg" class="portfolio__icon">
+                    <h3 class="portfolio__title">Lorem.</h3>
+                    <p class="portfolio__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                        tempore
+                        porro eius facilis?</p>
+                </article>
 
+                <article class="portfolio__icons">
+                    <img src="./svg/face.svg" class="portfolio__icon">
+                    <h3 class="portfolio__title">Lorem.</h3>
+                    <p class="portfolio__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                        tempore
+                        porro eius facilis?</p>
+                </article>
+
+                <article class="portfolio__icons">
+                    <img src="./svg/scatter-chart.svg" class="portfolio__icon">
+                    <h3 class="portfolio__title">Lorem.</h3>
+                    <p class="portfolio__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                        tempore
+                        porro eius facilis?</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- TODO: Credit -->
+        <section class="credit__main container">
+
+            <figure class="credit__figure">
+                <img src="./images/recursos/hero-about-img.png" class="credit__img">
+            </figure>
+
+            <article class="credit__texts">
+                <h1 class="credit__span">Lorem.</h1>
+                <h2 class="credit__title">Lorem, ipsum.</h2>
+                <p class="credit__paragraph"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo accusamus
+                    nisi
+                    asperiores dolorem delectus odit expedita voluptates magnam fugit aliquam nulla quidem,
+                    necessitatibus
+                    commodi modi porro saepe quibusdam tenetur dolores?</p>
+                <div class="credit__buttons">
+                    <a href="#" class="credit__cta"> More info </a>
+                </div>
+            </article>
+        </section>
+
+        <!-- TODO: Questions -->
+        <section class="questions container">
+
+            <h2 class="questions__header">Lorem ipsum dolor sit amet.</h2>
+            <p class="questions__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam
+                nesciunt,
+                quod distinctio harum molestias!</p>
+
+            <section class="questions__container">
+
+                <article class="questions__padding">
+
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Lorem.
+                            <span class="questions__arrow">
+                                <img src="./svg/angle-small-up.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                            quam atque?</p>
+                    </div>
+
+                </article>
+
+                <article class="questions__padding">
+
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Lorem, ipsum.
+                            <span class="questions__arrow">
+                                <img src="./svg/angle-small-up.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                            quam atque?</p>
+                    </div>
+
+                </article>
+
+                <article class="questions__padding">
+
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Lorem, ipsum dolor.
+                            <span class="questions__arrow">
+                                <img src="./svg/angle-small-up.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                            quam atque?</p>
+                    </div>
+
+                </article>
+            </section>
+        </section>
+
+        <!-- TODO: Joined -->
+        <section class="joined">
+
+            <div class="joined__container container">
+
+                <p class="joined__paragraph"> Example: 35,000+ already joined</p>
+                <h2 class="joined__title">Example: Stay up-to-date with what we’re doing</h2>
+
+                <form class="joined__form">
+                    <input type="email" placeholder="Enter Your Email Addres" class="joined__input">
+
+                    <div class="joined__buttons">
+                        <input type="submit" value="Contact Us" class="joined__submit">
+                    </div>
+                </form>
+
+            </div>
+        </section>
     </main>
 
     <!-- TODO: Footer -->
@@ -325,33 +277,25 @@
             </figure>
 
             <ul class="footer__list">
-
                 <li class="footer__item">
                     <a href="#" class="footer__link"> Features</a>
                 </li>
-
                 <li class="footer__item">
                     <a href="#" class="footer__link"> Pricing</a>
                 </li>
-
                 <li class="footer__item">
                     <a href="#" class="footer__link"> Contact</a>
                 </li>
-
             </ul>
 
             <div class="footer__media">
-
                 <a href="#" class="footer__social">
                     <img src="./images/icon-facebook.svg" class="footer__icon">
                 </a>
-
                 <a href="#" class="footer__social">
                     <img src="./images/icon-twitter.svg" class="footer__icon">
                 </a>
-
             </div>
-
         </div>
     </footer>
 

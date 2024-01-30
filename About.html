@@ -2,7 +2,6 @@
 <html lang="en">
 
 <!-- TODO: Tareas Pendientes
-     ! FIXME: Organizar estructura: Header, Main
      ? Pendiente Reunión
      ? Cambio de información en secciónes que lo requieran 
      ? Agregar información empresa 
@@ -10,6 +9,7 @@
      ! Rutas de navegación
 -->
 
+<!-- TODO: Head-->
 <head>
 
     <meta charset="UTF-8">
@@ -26,209 +26,223 @@
 </head>
 
 <body>
+    <!-- TODO: Header -->
+    <header class="hero">
+        <!-- TODO: Nav -->
+        <nav class="nav container">
 
-    <!-- TODO: Nav -->
-    <nav class="nav container">
-
-        <figure class="nav__figure">
-            <a href="#">
-                <img src="./favicon/Coasefin.ico" class="nav__logo">
-            </a>
-        </figure>
-
-        <div class="nav__hamburguer">
-            <img src="./images/icon-hamburger.svg" class="nav__button">
-        </div>
-
-        <div class="nav__container">
-            <ul class="nav__list container">
-                <li class="nav__element">
-                    <a href="#" class="nav__link">Features</a>
-                </li>
-                <li class="nav__element">
-                    <a href="#" class="nav__link">Pricing</a>
-                </li>
-                <li class="nav__element">
-                    <a href="#" class="nav__link">Contact</a>
-                </li>
-                <li class="nav__element">
-                    <a href="#" class="nav__link nav__link--last">Login</a>
-                </li>
-            </ul>
-
-            <div class="nav__social">
-                <a href="#" class="nav__media">
-                    <img src="./images/icon-facebook.svg" class="nav__socialme">
+            <figure class="nav__figure">
+                <a href="#">
+                    <img src="./favicon/Coasefin.ico" class="nav__logo">
                 </a>
-                <a href="#" class="nav__media">
-                    <img src="./images/icon-twitter.svg" class="nav__socialme">
-                </a>
-            </div>
-        </div>
-
-    </nav>
-
-    <!-- TODO: About-->
-    <section class="about__main container">
-
-        <figure class="about__figure">
-            <img src="./images/recursos/hero-about-img.png" class="about__img">
-        </figure>
-
-        <article class="about__texts">
-            <h1>Acerca de</h1>
-            <h2 class="about__title"> Cooasefin </h2>
-            <p class="about__paragraph"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo accusamus nisi
-                asperiores dolorem delectus odit expedita voluptates magnam fugit aliquam nulla quidem, necessitatibus
-                commodi modi porro saepe quibusdam tenetur dolores?</p>
-        </article>
-
-    </section>
-
-    <!-- TODO: Planning -->
-    <section class="planning_main container">
-
-        <article class="planning__article planning__article--active">
-
-            <figure class="planning__figure">
-                <img src="./images/recursos/services-about-img.png" class="planning__img">
             </figure>
 
-            <div class="planning__texts">
-                <h1>Planeación &</h1>
-                <h2 class="planning__subtitle"> Objetivos</h2>
-                <p class="planning__copy"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit temporibus at
-                    a labore eos veniam iusto, molestias dignissimos culpa explicabo repellat architecto dolorem id aut!
-                    Est quaerat similique suscipit unde?</p>
+            <div class="nav__hamburguer">
+                <img src="./images/icon-hamburger.svg" class="nav__button">
             </div>
 
-        </article>
+            <div class="nav__container">
+                <ul class="nav__list container">
+                    <li class="nav__element">
+                        <a href="#" class="nav__link">Features</a>
+                    </li>
+                    <li class="nav__element">
+                        <a href="#" class="nav__link">Pricing</a>
+                    </li>
+                    <li class="nav__element">
+                        <a href="#" class="nav__link">Contact</a>
+                    </li>
+                    <li class="nav__element">
+                        <a href="#" class="nav__link nav__link--last">Login</a>
+                    </li>
+                </ul>
 
-    </section>
+                <div class="nav__social">
+                    <a href="#" class="nav__media">
+                        <img src="./images/icon-facebook.svg" class="nav__socialme">
+                    </a>
+                    <a href="#" class="nav__media">
+                        <img src="./images/icon-twitter.svg" class="nav__socialme">
+                    </a>
+                </div>
+            </div>
 
-    <!-- TODO: Values -->
-    <section class="values container">
+        </nav>
 
-        <h2 class="values__subtitle">Lorem, ipsum dolor.</h2>
-        <p class="values__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, praesentium.</p>
+        <!-- TODO: About-->
+        <section class="about__main container">
 
-        <div class="values__main">
-            <article class="values__icons">
-                <img src="./svg/grafica.svg" class="values__icon">
-                <h3 class="values__title">Lorem.</h3>
-                <p class="values__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
-                    porro eius facilis?</p>
+            <figure class="about__figure">
+                <img src="./images/recursos/hero-about-img.png" class="about__img">
+            </figure>
+
+            <article class="about__texts">
+                <h1>Acerca de</h1>
+                <h2 class="about__title"> Cooasefin </h2>
+                <p class="about__paragraph"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo accusamus
+                    nisi
+                    asperiores dolorem delectus odit expedita voluptates magnam fugit aliquam nulla quidem,
+                    necessitatibus
+                    commodi modi porro saepe quibusdam tenetur dolores?</p>
             </article>
+        </section>
+    </header>
 
-            <article class="values__icons">
-                <img src="./svg/face.svg" class="values__icon">
-                <h3 class="avalues__title">Lorem.</h3>
-                <p class="values__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
-                    porro eius facilis?</p>
+    <!-- TODO: Main-->
+    <main class="main">
+
+        <!-- TODO: Planning -->
+        <section class="planning_main container">
+
+            <article class="planning__article planning__article--active">
+
+                <figure class="planning__figure">
+                    <img src="./images/recursos/services-about-img.png" class="planning__img">
+                </figure>
+
+                <div class="planning__texts">
+                    <h1>Planeación &</h1>
+                    <h2 class="planning__subtitle"> Objetivos</h2>
+                    <p class="planning__copy"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit temporibus
+                        at
+                        a labore eos veniam iusto, molestias dignissimos culpa explicabo repellat architecto dolorem id
+                        aut!
+                        Est quaerat similique suscipit unde?</p>
+                </div>
             </article>
+        </section>
 
-            <article class="values__icons">
-                <img src="./svg/scatter-chart.svg" class="values__icon">
-                <h3 class="values__title">Lorem.</h3>
-                <p class="values__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
-                    porro eius facilis?</p>
-            </article>
-        </div>
+        <!-- TODO: Values -->
+        <section class="values container">
 
-    </section>
+            <h2 class="values__subtitle">Lorem, ipsum dolor.</h2>
+            <p class="values__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, praesentium.
+            </p>
 
-    <!-- TODO: Testimony -->
-    <section class="testimony">
+            <div class="values__main">
+                <article class="values__icons">
+                    <img src="./svg/grafica.svg" class="values__icon">
+                    <h3 class="values__title">Lorem.</h3>
+                    <p class="values__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                        porro eius facilis?</p>
+                </article>
 
-        <div class="testimony__container container">
+                <article class="values__icons">
+                    <img src="./svg/face.svg" class="values__icon">
+                    <h3 class="avalues__title">Lorem.</h3>
+                    <p class="values__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                        porro eius facilis?</p>
+                </article>
 
-            <img src="./svg/angle-small-left.svg" class="testimony__arrow" id="before">
+                <article class="values__icons">
+                    <img src="./svg/scatter-chart.svg" class="values__icon">
+                    <h3 class="values__title">Lorem.</h3>
+                    <p class="values__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                        porro eius facilis?</p>
+                </article>
+            </div>
 
-            <section class="testimony__body testimony__body--show" data-id="1">
+        </section>
 
-                <div class="testimony__texts">
-                    <h2 class="testimony__subtitle">Mi nombre es "Nombre cliente", <span class="testimony__course">Pagaduría</span></h2>
-                    <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                        esse, asperiores eaque totam nulla repudiandae quasi, deserunt culpa exercitationem
-                        blanditiis laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
-                </div>
+        <!-- TODO: Testimony -->
+        <section class="testimony">
 
-                <figure class="testimony__picture">
-                    <img src="./images/recursos/face.jpg" class="testimony__img">
-                </figure>
+            <div class="testimony__container container">
 
-            </section>
+                <img src="./svg/angle-small-left.svg" class="testimony__arrow" id="before">
 
-            <section class="testimony__body" data-id="2">
+                <section class="testimony__body testimony__body--show" data-id="1">
 
-                <div class="testimony__texts">
-                    <h2 class="subtitle">Mi nombre es "Nombre cliente"<span class="testimony__course">Pagaduría</span></h2>
-                    <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                        esse, asperiores eaque laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione
-                        voluptatum!</p>
-                </div>
+                    <div class="testimony__texts">
+                        <h2 class="testimony__subtitle">Mi nombre es "Nombre cliente", <span
+                                class="testimony__course">Pagaduría</span></h2>
+                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                            esse, asperiores eaque totam nulla repudiandae quasi, deserunt culpa exercitationem
+                            blanditiis laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+                    </div>
 
-                <figure class="testimony__picture">
-                    <img src="./images/recursos/face2.jpg" class="testimony__img">
-                </figure>
+                    <figure class="testimony__picture">
+                        <img src="./images/recursos/face.jpg" class="testimony__img">
+                    </figure>
 
-            </section>
+                </section>
 
-            <section class="testimony__body" data-id="3">
+                <section class="testimony__body" data-id="2">
 
-                <div class="testimony__texts">
-                    <h2 class="subtitle">Mi nombre es "Nombre cliente"<span class="testimony__course">Pagaduría</span></h2>
-                    <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                        esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
-                </div>
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es "Nombre cliente"<span
+                                class="testimony__course">Pagaduría</span>
+                        </h2>
+                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                            esse, asperiores eaque laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione
+                            voluptatum!</p>
+                    </div>
 
-                <figure class="testimony__picture">
-                    <img src="./images/recursos/face3.jpg" class="testimony__img">
-                </figure>
+                    <figure class="testimony__picture">
+                        <img src="./images/recursos/face2.jpg" class="testimony__img">
+                    </figure>
 
-            </section>
+                </section>
 
-            <section class="testimony__body" data-id="4">
+                <section class="testimony__body" data-id="3">
 
-                <div class="testimony__texts">
-                    <h2 class="subtitle">Mi nombre es "Nombre cliente"<span class="testimony__course">Pagaduría</span></h2>
-                    <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                        esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
-                </div>
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es "Nombre cliente"<span
+                                class="testimony__course">Pagaduría</span>
+                        </h2>
+                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                            esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+                    </div>
 
-                <figure class="testimony__picture">
-                    <img src="./images/recursos/face4.jpg" class="testimony__img">
-                </figure>
+                    <figure class="testimony__picture">
+                        <img src="./images/recursos/face3.jpg" class="testimony__img">
+                    </figure>
 
-            </section>
+                </section>
 
-            <img src="/svg/angle-small-right.svg" class="testimony__arrow" id="next">
+                <section class="testimony__body" data-id="4">
 
-        </div>
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es "Nombre cliente"<span
+                                class="testimony__course">Pagaduría</span>
+                        </h2>
+                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                            esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+                    </div>
 
-    </section>
+                    <figure class="testimony__picture">
+                        <img src="./images/recursos/face4.jpg" class="testimony__img">
+                    </figure>
 
-    <!-- TODO: Joined -->
-    <section class="joined">
+                </section>
 
-        <div class="joined__container container">
+                <img src="/svg/angle-small-right.svg" class="testimony__arrow" id="next">
 
-            <p class="joined__paragraph"> Example: 35,000+ already joined</p>
-            <h2 class="joined__title"> Example: Stay up-to-date with what we’re doing</h2>
+            </div>
 
-            <form class="joined__form">
+        </section>
 
-                <input type="email" placeholder="Enter Your Email Addres" class="joined__input">
+        <!-- TODO: Joined -->
+        <section class="joined">
 
-                <div class="joined__buttons">
-                    <input type="submit" value="Contact Us" class="joined__submit">
-                </div>
+            <div class="joined__container container">
 
-            </form>
+                <p class="joined__paragraph"> Example: 35,000+ already joined</p>
+                <h2 class="joined__title"> Example: Stay up-to-date with what we’re doing</h2>
 
-        </div>
+                <form class="joined__form">
 
-    </section>
+                    <input type="email" placeholder="Enter Your Email Addres" class="joined__input">
+
+                    <div class="joined__buttons">
+                        <input type="submit" value="Contact Us" class="joined__submit">
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+    </main>
 
     <!-- TODO: Footer -->
     <footer class="footer">
@@ -276,7 +290,7 @@
     <!-- TODO: JS -->
     <script src="./js/main.js"></script>
     <script src="./js/slider.js"></script>
-    
+
 </body>
 
 </html>

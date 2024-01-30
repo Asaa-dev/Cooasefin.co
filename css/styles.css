@@ -1450,100 +1450,6 @@ body {
     transform: scale(1.03);
 }
 
-/* * portfolio 
-   ? Pendiente para revisión y uso en otra vista.
-*/
-
-/* .portfolio {
-    width: 90%;
-    text-align: center;
-}
-
-.portfolio__title {
-    font-size: 1.7rem;
-    color: var(--very-dark);
-}
-
-.portfolio__paragraph {
-    color: var(--grayish);
-    margin: 1rem auto 2.5rem;
-    max-width: 400px;
-}
-
-.portfolio__container {
-    width: 97%;
-    margin: 3rem auto 0;
-    max-width: 400px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-}
-
-.portfolio__item {
-    box-shadow: 0 3px 6px var(--grayish-alpha);
-    padding: 2.5rem 0;
-    border-radius: 12px;
-}
-
-.portfolio__img {
-    width: 50%;
-    max-width: 120px;
-    margin: 0 auto;
-}
-
-.portfolio__subtitle {
-    margin-top: 30px;
-    color: var(--very-dark);
-    font-size: 1.4rem;
-}
-
-.portfolio__description {
-    margin-top: 1rem;
-    padding-bottom: 2rem;
-    border-bottom: 6px;
-    color: var(--grayish);
-    line-height: 1.5;
-}
-
-.portfolio__button {
-    display: block;
-    width: 90%;
-    background-color: var(--very-dark);
-    margin: 1.3rem auto 0;
-    color: #fff;
-    text-decoration: none;
-    padding: 1rem 0;
-    border-radius: 4px;
-
-    transition: all 0.3s ease 0s;
-
-}
-
-.portfolio__button:hover {
-    transform: scale(1.01);
-}
-
-.portfolio__button--active {
-    display: block;
-    width: 90%;
-    background-color: var(--dark-light-purple);
-    margin: 1.3rem auto 0;
-    color: #fff;
-    text-decoration: none;
-    padding: 1rem 0;
-    border-radius: 4px;
-
-    transition: all 0.3s ease 0s;
-
-}
-
-.portfolio__button--active:hover {
-    transform: scale(1.01);
-}
-
-*/
-
 /* * Portfolio */
 
 .portfolio {
@@ -1910,40 +1816,7 @@ body {
     .portfolio_about__cta {
         display: inline-block;
     }
-
-    /*  * Portfolio 
-        ? Pendiente para revisión y uso en otra vista
-    */
-
-    /*.portfolio__title {
-        font-size: 2.5rem;
-    }
-
-
-    .portfolio__container {
-        width: 100%;
-        max-width: unset;
-        margin: 4rem auto 0;
-        padding: 0 2rem;
-
-        gap: 2rem;
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    .portfolio__item {
-        flex: 1;
-    }
-
-    .portfolio__item:nth-child(2) {
-        margin-top: 2rem;
-    }
-
-    .portfolio__item:nth-child(3) {
-        margin-top: 4rem;
-    }
-    */
-
+    
     /* * Legal */
 
     .legal__article {
@@ -2117,7 +1990,7 @@ body {
     }
 }
 
-/* TODO: Estilos: Contacto.html */
+/* TODO: Estilos: Contact.html */
 
 /* * ContactUS */
 
@@ -2130,21 +2003,20 @@ body {
 .contactUS .contactUS__title {
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 2em;
+    font-size: 1.7rem;
 }
 
 .contactUS__paragraph{
     line-height: 1.5;
     color: var(--grayish);
     margin: 1rem auto 2.5rem;
-    max-width: 700px;
+    max-width: 600px;
     text-align: center;
 }
 
 .contactUS .contactUS__title h2 {
     color: var(--very-dark);
-    font-weight: 500;
+    font-size: 1.7rem;
 }
 
 /* * Contact form,info,map */
@@ -2164,7 +2036,6 @@ body {
 /* * Contact */
 .contact {
     padding: 40px;
-    padding-bottom: 0;
     box-shadow: 0 3px 6px var(--grayish-alpha);
     border-radius: 10px;
 }
@@ -2182,7 +2053,7 @@ body {
 .contact h3 {
     color: var(--very-dark);
     font-weight: 500;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
@@ -2210,6 +2081,7 @@ body {
 
 .inputBox span {
     color: var(--soft-purple-basic);
+    font-weight: 500;
     margin-top: 10px;
     margin-bottom: 5px;
 }
@@ -2238,7 +2110,7 @@ body {
 
 .inputBox input[type="submit"] {
     display: block;
-    width: 90%;
+    width: 100%;
     background-color: var(--very-dark);
     margin: 1.3rem auto 0;
     color: #fff;
@@ -2291,7 +2163,7 @@ body {
 
 .info .infoBox div p {
     color: white;
-    font-size: 1.1em;
+    font-size: .8rem;
 }
 
 .info .infoBox div a {
@@ -2303,7 +2175,8 @@ body {
 /* * Sci */
 
 .sci {
-    padding: 50px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     display: flex;
 }
 
@@ -2315,13 +2188,15 @@ body {
 .sci li a {
     color: var(--grayish);
     transition: all 0.3s ease 0s;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .sci li a:hover {
     color: var(--soft-white);
-    font-size: 2em;
-    transform: scale(1.01);
+}
+
+.contact__info_about {
+    color: var(--grayish);
 }
 
 /* * Map */
@@ -2336,7 +2211,11 @@ body {
     border-radius: 10px;
 }
 
+/* TODO: Contact.html CSS Styles - max-width: 1250px) */
+
 @media (max-width: 1250px) {
+
+    /* * ContactUS */
 
     .contactUS {
         padding: 20px;
@@ -2375,5 +2254,21 @@ body {
 @media (max-width: 320px) {
     .contactUS {
         font-size: 10px;
+    }
+}
+
+/* TODO: Contact.html CSS Styles - max-width: 1250px) */
+
+@media (min-width: 768px) {
+    :root {
+        --padding-container: 80px 0;
+    }
+
+    img {
+        display: block;
+    }
+
+    .contactUS .contactUS__title h2 {
+        font-size: 2.5rem;
     }
 }
