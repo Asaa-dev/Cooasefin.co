@@ -6,6 +6,7 @@ const Networks__tabButtons = document.querySelectorAll('.networks__tab');
 
 const clickQuestions = document.querySelectorAll('.article__question');
 const contact_clickQuestions = document.querySelectorAll('.article_contact__question');
+const credit_clickQuestions = document.querySelectorAll('.article_credit__question');
 
 // TODO: Evento de navegación responsive.
 navButton.addEventListener('click', ()=>{
@@ -107,6 +108,19 @@ contact_clickQuestions.forEach(contact_clickQuestion =>{
         const anwserContainer = contact_clickQuestion.nextElementSibling;
         
         anwserContainer.classList.toggle('article_contact__content--show');
+
+    });
+});
+
+credit_clickQuestions.forEach(credit_clickQuestion =>{
+    credit_clickQuestion.addEventListener('click', ()=>{
+
+        const arrow = credit_clickQuestion.children[0];
+        arrow.classList.toggle('article_credit__arrow--rotate');
+
+        const anwserContainer = credit_clickQuestion.nextElementSibling;
+        
+        anwserContainer.classList.toggle('article_credit__content--show');
 
     });
 });
