@@ -131,10 +131,10 @@ body {
 }
 
 .nav__link--last {
-    background-color: var(--dark-light-purple);
+    background-color: var(--very-dark);
     color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 1rem 0;
     cursor: pointer;
     transition: all 0.3s ease 0s;
@@ -142,7 +142,7 @@ body {
 
 .nav__link--last:hover {
     color: white;
-    background-color: var(--soft-purple-basic);
+    background-color: var(--very-dark);
 }
 
 .nav__social {
@@ -180,8 +180,8 @@ body {
     content: "";
     position: absolute;
     background: linear-gradient(to left,
-            var(--dark-purple),
-            var(--dark-light-purple));
+            var(--soft-white),
+            var(--grayish));
     width: 60%;
     max-width: 450px;
     bottom: 30px;
@@ -196,6 +196,7 @@ body {
     width: 90%;
     margin: 0 auto;
     max-width: 450px;
+    border-radius: 10px;
 }
 
 .hero__texts {
@@ -224,29 +225,29 @@ body {
 }
 
 .hero__button {
-    background-color: var(--dark-light-purple);
+    background-color: #3f9bf7;
     color: white;
     text-decoration: none;
     padding: 1rem;
-    border-radius: 4px;
+    border-radius: 5px;
     font-weight: 500;
     transition: all 0.3s ease 0s;
 }
 
 .hero__button--white {
-    background-color: var(--very-dark);
+    background-color: #2ae585;
     color: white;
     transition: all 0.3s ease 0s;
 }
 
 .hero__button:hover {
-    background-color: var(--soft-purple-basic);
+    background-color: #1489fd;
     color: white;
     transform: scale(1.03);
 }
 
 .hero__button--white:hover {
-    background-color: var(--very-dark);
+    background-color: #0dd76f;
     color: white;
     transform: scale(1.03);
 }
@@ -308,7 +309,7 @@ body {
 }
 
 .services__tab--active {
-    border-color: var(--dark-light-purple);
+    border-color: var(--very-dark);
 }
 
 .services__container {
@@ -339,8 +340,8 @@ body {
     content: "";
     position: absolute;
     background: linear-gradient(to right,
-            var(--dark-purple),
-            var(--dark-light-purple));
+            var(--soft-white),
+            var(--grayish));
     width: 60%;
     max-width: 450px;
     bottom: 30px;
@@ -353,7 +354,7 @@ body {
 }
 
 .services__img {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     max-width: 450px;
 }
@@ -386,7 +387,7 @@ body {
 .services__cta {
     padding: 1rem 1.5rem;
     margin-top: 1.2rem;
-    background-color: var(--dark-light-purple);
+    background-color: var(--very-dark);
     border-radius: 4px;
     text-decoration: none;
     color: white;
@@ -395,7 +396,7 @@ body {
 
 .services__cta:hover {
     color: white;
-    background-color: var(--soft-purple-basic);
+    background-color: var(--very-dark);
     transform: scale(1.03);
 }
 
@@ -443,7 +444,7 @@ body {
 .rates__element--best {
     width: 370px;
     padding: 60px 40px;
-    background-color: var(--dark-light-purple);
+    background-color: #0dd76f;
     --color-plan: rgb(255 255 255 / 75%);
     --color-price: white;
     --bg-cta: var(--very-dark);
@@ -561,7 +562,7 @@ body {
 .article__cta {
     display: inline-block;
     margin-top: 1.5rem;
-    background-color: var(--dark-light-purple);
+    background-color: var(--very-dark);
     color: white;
     text-decoration: none;
     padding: 1rem 1.5rem;
@@ -579,7 +580,7 @@ body {
 /* * Joined */
 
 .joined {
-    background-color: var(--dark-purple);
+    background-color: #1f2124;
 }
 
 .joined__container {
@@ -621,15 +622,15 @@ body {
 }
 
 .joined__submit {
-    background-color: var(--very-dark);
-    color: white;
+    background-color: var(--soft-white);
+    color: var(--very-dark);
     transition: all 0.3s ease 0s;
     cursor: pointer;
 }
 
 .joined__submit:hover {
-    background-color: var(--very-dark);
-    color: white;
+    background-color: var(--soft-white);
+    color: var(--very-dark);
     transform: scale(1.03);
 }
 
@@ -745,7 +746,7 @@ body {
         border: none;
         color: white;
         padding: .6rem 1.5rem;
-        background-color: var(--dark-light-purple);
+        background-color: var(--very-dark);
     }
 
     .nav__link--last:hover {
@@ -2618,7 +2619,7 @@ body {
 
 /* TODO: Estilos: Credit_Request.html */
 
-.credit__request-info{
+.credit__request-info {
     padding: 40px 100px 0px;
     position: relative;
     width: 90%;
@@ -2741,7 +2742,7 @@ body {
     margin-top: 15px;
 }
 
-.section__file{
+.section__file {
     text-align: center;
 }
 
@@ -2891,7 +2892,7 @@ body {
 
     /* * Credit_request-info */
 
-    .credit__request-info .credit__request-title h2{
+    .credit__request-info .credit__request-title h2 {
         font-size: 2.5rem;
     }
 
