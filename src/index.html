@@ -3,102 +3,115 @@
 
 <head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- * Primary Meta Tags -->
+  <meta name="title" content="Cooasefin.co - Informative company website" />
+  <meta name="description" content="Detailed information page about the company cooasefin" />
+
 
   <title>Cooasefin.co</title>
 
-  <link rel="shortcut icon" href="./favicon/Coasefin-white.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <!-- * Link -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+  <link rel="stylesheet" href="/src/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet" />
 
 </head>
 
 <body>
 
   <header class="hero">
-
+    <!-- * Navbar -->
     <nav class="nav container">
 
+      <!-- * Navbar figure -->
       <figure class="nav__figure">
         <a href="#">
-          <img src="./favicon/Coasefin-B&N.ico" class="nav__logo">
+          <img src="/src/assets/favicon/Coasefin-black.ico" class="nav__logo" alt="Company logo" />
         </a>
       </figure>
 
+      <!-- * Navbar hamburguer -->
       <div class="nav__hamburguer">
-        <img src="./images/icon-hamburger.svg" class="nav__button">
+        <img src="/src/assets/svg/icon-hamburger.svg" class="nav__button" alt="Icon hamburguer responsive" />
       </div>
 
+      <!-- * Navbar links -->
       <div class="nav__container">
         <ul class="nav__list container">
-
           <li class="nav__element">
-            <a href="./About.html" class="nav__link">Empresa</a>
+            <a href="/src/about.html" class="nav__link">Empresa</a>
           </li>
-
           <li class="nav__element">
-            <a href="./services.html" class="nav__link">Servicios</a>
+            <a href="/src/services.html" class="nav__link">Servicios</a>
           </li>
-
           <li class="nav__element">
-            <a href="./Contact.html" class="nav__link">Contacto</a>
+            <a href="/src/contact.html" class="nav__link">Contacto</a>
           </li>
-
           <li class="nav__element">
-            <a href="./Credit_request.html" class="nav__link nav__link--last">Agendar</a>
+            <a href="/src/credit_form.html" class="nav__link nav__link--last">Agendar</a>
           </li>
-
         </ul>
 
+        <!-- * Navbar social media -->
         <div class="nav__social">
           <a href="https://www.facebook.com/?locale=es_LA" class="nav__media">
-            <img src="./images/icon-facebook.svg" class="nav__socialme">
+            <img src="/src/assets/svg/facebook.svg" class="nav__socialme" alt="Icon facebook" />
           </a>
-
           <a href="https://twitter.com/?lang=es" class="nav__media">
-            <img src="./images/icon-twitter.svg" class="nav__socialme">
+            <img src="/src/assets/svg/icon-twitter.svg" class="nav__socialme" alt="Icon twitter" />
           </a>
-
         </div>
+
       </div>
+
     </nav>
 
+    <!-- * Section hero -->
     <section class="hero__main container">
-
       <figure class="hero__figure">
-        <img src="./images/recursos/437shots_so.png" class="hero__img">
+        <img src="/src/assets/img/project/hero_img.png" class="hero__img" />
       </figure>
 
+      <!-- * Hero texts -->
       <article class="hero__texts">
-
         <h1 class="hero__title"> Lorem ipsum dolor sit amet.</h1>
         <p class="hero__paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, porro. Placeat unde
           similique non hic.</p>
 
+        <!-- * Hero buttons -->
         <div class="hero__buttons">
           <a href="#" class="hero__button"> More info </a>
           <a href="#" class="hero__button hero__button--white"> More info </a>
         </div>
-
       </article>
-
     </section>
 
   </header>
 
   <main class="main">
 
+    <!-- * Section services -->
     <section class="services container">
 
+      <!-- * Services texts -->
       <div class="services__content">
-
         <h2 class="services__title">Lorem.</h2>
         <p class="services__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, nihil sapiente!
           Libero minima aliquam numquam?</p>
 
+        <!-- * Services list -->
         <ul class="services__list">
           <li class="services__element">
             <a href="#" class="services__tab services__tab--active" data-article="1">Lorem.</a>
@@ -112,80 +125,97 @@
             </a>
           </li>
         </ul>
-
       </div>
 
+      <!-- * Services content -->
       <div class="services__container">
+
+        <!-- * Services 1 article -->
         <article class="services__article services__article--active">
 
+          <!-- * Services img -->
           <figure class="services__figure">
-            <img src="./images/recursos/129shots_so.png" class="services__img">
+            <img src="/src/assets/img/project/service1_img.png" class="services__img" alt="Service image number 1" />
           </figure>
 
+          <!-- * Services 1 texts -->
           <div class="services__texts">
             <h3 class="services__subtitle"> Lorem.</h3>
             <p class="services__copy"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, non odio? Totam
               itaque aliquid modi!</p>
 
+            <!-- * Services 1 buttons -->
             <div class="services__buttons">
               <a href="#" class="services__cta">More Info</a>
             </div>
-          </div>
 
+          </div>
         </article>
 
+        <!-- * Services 2 aticle -->
         <article class="services__article">
 
+          <!-- * Services 2 img -->
           <figure class="services__figure">
-            <img src="./images/recursos/895shots_so.png" class="services__img">
+            <img src="/src/assets/img/project/service2_img.png" class="services__img" />
           </figure>
 
+          <!-- * Services 2 texts -->
           <div class="services__texts">
             <h3 class="services__subtitle"> Lorem, ipsum.</h3>
             <p class="services__copy"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel fugiat voluptas
               maxime minima eos voluptate!</p>
 
+            <!-- * Services 2 buttons -->
             <div class="services__buttons">
               <a href="#" class="services__cta">More Info</a>
             </div>
           </div>
-
         </article>
 
+        <!-- * Services 3 article -->
         <article class="services__article">
 
+          <!-- * Services 3 img -->
           <figure class="services__figure">
-            <img src="./images/recursos/281shots_so.png" class="services__img">
+            <img src="/src/assets/img/project/service3_img.png" class="services__img" />
           </figure>
 
+          <!-- * Services 3 texts -->
           <div class="services__texts">
             <h3 class="services__subtitle">Lorem, ipsum dolor.</h3>
             <p class="services__copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus libero eos
               ratione impedit adipisci cum!</p>
 
+            <!-- * Services 3 buttons -->
             <div class="services__buttons">
               <a href="#" class="services__cta">More Info</a>
             </div>
           </div>
-
         </article>
-      </div>
 
+      </div>
     </section>
 
+    <!-- * Section rates -->
     <section class="rates container">
 
+      <!-- * Rates texts -->
       <h2 class="rates__title">Lorem, ipsum.</h2>
       <p class="rates__paragraph">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis debitis vitae iusto sit accusamus doloremque
         rerum amet saepe et quidem. Quibusdam officia, illo ratione esse deserunt doloribus quam laborum in.
       </p>
 
+      <!-- * Rates tables -->
       <div class="rates__table">
+
+        <!-- * Rates element -->
         <div class="rates__element">
           <p class="rates__name">Lorem.</p>
           <h3 class="rates__price">Lorem.</h3>
 
+          <!-- * Rates items -->
           <div class="rates__items">
             <p class="rates__features">Lorem.</p>
             <p class="rates__features">Lorem.</p>
@@ -195,11 +225,12 @@
           <a href="#" class="rates__cta">More info</a>
         </div>
 
-
+        <!-- * Rates element best -->
         <div class="rates__element rates__element--best">
           <p class="rates__name">Lorem.</p>
           <h3 class="rates__price">Lorem.</h3>
 
+          <!-- * Rates items best -->
           <div class="rates__items">
             <p class="rates__features">Lorem.</p>
             <p class="rates__features">Lorem.</p>
@@ -209,10 +240,12 @@
           <a href="#" class="rates__cta">More info</a>
         </div>
 
+        <!-- * Rates element -->
         <div class="rates__element">
           <p class="rates__name">Lorem.</p>
           <h3 class="rates__price">Lorem.</h3>
 
+          <!-- * Rates items -->
           <div class="rates__items">
             <p class="rates__features">Lorem.</p>
             <p class="rates__features">Lorem.</p>
@@ -221,81 +254,91 @@
 
           <a href="#" class="rates__cta">More info</a>
         </div>
+
       </div>
 
     </section>
 
+    <!-- * Section article content -->
     <section class="article container">
 
+      <!-- * Article texts -->
       <h2 class="article__title"> Lorem.</h2>
       <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia veniam corporis
         consequuntur consequatur cupiditate atque.</p>
 
       <div class="article__container">
+
+        <!-- * Article 1 img or icon -->
         <h3 class="article__question">Lorem, ipsum.
-          <img src="./images/icon-arrow.svg" class="article__arrow">
+          <img src="/src/assets/svg/icon-arrow.svg" class="article__arrow" alt="Icon arrow" />
         </h3>
 
+        <!-- * Article 1 content questions -->
         <article class="article__content">
-
           <div class="article__show ">
             <p class="article__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
               justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
           </div>
-
         </article>
 
+        <!-- * Article 2 img or icon -->
         <h3 class="article__question">Lorem, ipsum dolor.
-          <img src="./images/icon-arrow.svg" class="article__arrow">
+          <img src="/src/assets/svg/icon-arrow.svg" class="article__arrow" alt="Icon arrow" />
         </h3>
 
+        <!-- * Article 2 content questions  -->
         <article class="article__content">
-
           <div class="article__show">
             <p class="article__answer"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non excepturi
               accusantium neque in cum repellendus voluptatum eaque dolore deserunt sequi!</p>
           </div>
-
         </article>
 
+        <!-- * Article 3 img or icon -->
         <h3 class="article__question"> Lorem ipsum dolor sit.
-          <img src="./images/icon-arrow.svg" class="article__arrow">
+          <img src="/src/assets/svg/icon-arrow.svg" class="article__arrow" alt="Icon arrow" />
         </h3>
 
+        <!-- * Article 3 content questions -->
         <article class="article__content">
-
           <div class="article__show">
             <p class="article__answer">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab omnis aliquid quia soluta illum, alias
               inventore blanditiis reiciendis veniam cumque molestias similique cum quod accusamus.</p>
           </div>
-
         </article>
 
+        <!-- * Article 4 img or icon -->
         <h3 class="article__question"> Lorem ipsum dolor sit amet.
-          <img src="./images/icon-arrow.svg" class="article__arrow">
+          <img src="/src/assets/svg/icon-arrow.svg" class="article__arrow" alt="Icon arrow" />
         </h3>
 
+        <!-- * Article 4 content questions -->
         <article class="article__content">
-
           <div class="article__show">
             <p class="article__answer"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero tempore a odit
               dolor quae dolorem porro natus aperiam, impedit, autem cupiditate voluptatibus quia quasi mollitia illum
               iusto ipsa ad cumque.</p>
           </div>
         </article>
-      </div>
 
+      </div>
+      <!-- * Article button -->
       <a href="#" class="article__cta">More Info</a>
 
     </section>
 
+    <!-- * Section joined -->
     <section class="joined">
 
+      <!-- * Joined texts -->
       <div class="joined__container container">
         <p class="joined__paragraph"> Example: 35,000+ already joined</p>
         <h2 class="joined__title"> Example: Stay up-to-date with what we’re doing</h2>
 
+        <!--  * Joined form 
+              Todo: Implementar formulario. -->
         <form class="joined__form">
           <input type="email" placeholder="Enter Your Email Addres" class="joined__input">
           <div class="joined__buttons">
@@ -303,47 +346,56 @@
           </div>
         </form>
       </div>
-
     </section>
 
   </main>
 
+  <!-- * Section footer -->
   <footer class="footer">
 
+    <!-- * Footer content -->
     <div class="footer__container container">
+
+      <!-- * Footer img -->
       <figure class="footer__figure">
         <a href="#">
-          <img src="./favicon/Coasefin-white.ico" class="footer__logo">
+          <img src="/src/assets/favicon/Coasefin-white.ico" class="footer__logo" alt="Company logo footer" />
         </a>
       </figure>
 
+      <!-- * Footer links -->
       <ul class="footer__list">
         <li class="footer__item">
-          <a href="./About.html" class="footer__link"> Empresa</a>
+          <a href="/src/about.html" class="footer__link"> Empresa</a>
         </li>
         <li class="footer__item">
-          <a href="./services.html" class="footer__link"> Servicios</a>
+          <a href="/src/services.html" class="footer__link"> Servicios</a>
         </li>
         <li class="footer__item">
-          <a href="./Contact.html" class="footer__link"> Contacto</a>
+          <a href="/src/contact.html" class="footer__link"> Contacto</a>
         </li>
       </ul>
 
+      <!-- * Footer social links -->
       <div class="footer__media">
         <a href="https://www.facebook.com/?locale=es_LA" class="footer__social">
-          <img src="./images/icon-facebook.svg" class="footer__icon">
+          <img src="/src/assets/svg/facebook.svg" class="footer__icon" />
         </a>
 
         <a href="https://twitter.com/?lang=es" class="footer__social">
-          <img src="./images/icon-twitter.svg" class="footer__icon">
+          <img src="/src/assets/svg/icon-twitter.svg" class="footer__icon" />
         </a>
+
+        <!-- Todo: Agregar Copyright -->
+
       </div>
 
     </div>
 
   </footer>
 
-  <script src="./js/main.js"></script>
+  <!-- * Scripts -->
+  <script src="/src/js/main.js"></script>
 
 </body>
 
