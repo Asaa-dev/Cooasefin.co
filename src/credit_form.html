@@ -1,93 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
-<!--  TODO: Tareas pendientes
-      ? Agregar información - empresa
-      ? Reunión para la información.
-
-      TODO: Pendientes desarrollo
-      ? Rutas de navegación
-      ? Revisión y cambio de nav hamburguer
-      ? Revisión general 
-
--->
-
-<!-- TODO: Head-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- * Primary Meta Tags -->
+    <meta name="title" content="Cooasefin.co - Informative company website - services.html" />
+    <meta name="description" content="Detailed information page about the company cooasefin" />
+
+    <!-- TODO: Agregar un titulo coherente -->
     <title>Cooasefin.co</title>
 
-    <title>Cooasefin.co</title>
+    <!-- * Link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
 
-    <link rel="shortcut icon" href="./favicon/Coasefin-white.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet" />
 
 </head>
 
-<!-- TODO: Body -->
 <body>
 
-    <!-- TODO: Header -->
     <header class="hero">
 
-        <!-- TODO: Nav -->
+        <!-- * Section Navbar -->
         <nav class="nav container">
 
+            <!-- * Navbar figure -->
             <figure class="nav__figure">
-                <a href="./index.html">
-                    <img src="./favicon/Coasefin-B&N.ico" class="nav__logo">
+                <a href="/src/index.html">
+                    <img src="/src/assets/favicon/Coasefin-black.ico" class="nav__logo" alt="Company logo" />
                 </a>
             </figure>
 
+            <!-- * Navbar hamburguer -->
             <div class="nav__hamburguer">
-                <img src="./images/icon-hamburger.svg" class="nav__button">
+                <img src="/src/assets/svg/icon-hamburger.svg" class="nav__button" alt="Icon hamburguer responsive" />
             </div>
 
+            <!-- * Navbar links -->
             <div class="nav__container">
                 <ul class="nav__list container">
-
                     <li class="nav__element">
-                        <a href="./About.html" class="nav__link">Empresa</a>
+                        <a href="/src/about.html" class="nav__link">Empresa</a>
                     </li>
-
                     <li class="nav__element">
-                        <a href="./services.html" class="nav__link">Servicios</a>
+                        <a href="/src/services.html" class="nav__link">Servicios</a>
                     </li>
-
                     <li class="nav__element">
-                        <a href="./Contact.html" class="nav__link">Contacto</a>
+                        <a href="/src/contact.html" class="nav__link">Contacto</a>
                     </li>
-
                     <li class="nav__element">
                         <a href="#" class="nav__link nav__link--last">Agendar</a>
                     </li>
-
                 </ul>
 
+                <!-- * Navbar social media -->
                 <div class="nav__social">
                     <a href="https://www.facebook.com/?locale=es_LA" class="nav__media">
-                        <img src="./images/icon-facebook.svg" class="nav__socialme">
+                        <img src="/src/assets/svg/icon-facebook.svg" class="nav__socialme" alt="Icon facebook" />
                     </a>
-
                     <a href="https://twitter.com/?lang=es" class="nav__media">
-                        <img src="./images/icon-twitter.svg" class="nav__socialme">
+                        <img src="/src/assets/svg/icon-twitter.svg" class="nav__socialme" alt="Icon twitter" />
                     </a>
-
                 </div>
             </div>
+
         </nav>
 
-        <!-- TODO: Credit__Request Info -->
+        <!-- * Section credit request -->
         <section class="credit__request-info container">
             <div class="credit__request-title">
                 <h2>Lorem.</h2>
             </div>
 
+            <!-- * Credit request texts -->
             <div class="credit__request-paragraph">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae earum eaque ex, impedit dicta!
                 </p>
@@ -96,15 +93,14 @@
 
     </header>
 
-    <!-- TODO: Main -->
     <main class="main">
 
-        <!-- TODO: Credit__Request Form -->
+        <!-- * Credit request content -->
         <section class="credit__request container">
 
             <h2 class="credit__subtitle">Agendamiento</h2>
 
-            <!-- * Formulario -->
+            <!-- * Credit form -->
             <form action="#" class="form__credit">
 
                 <div class="input-box">
@@ -184,24 +180,28 @@
 
                 </div>
 
+                <!-- !FIXME: Revisar rutas -->
                 <a href="#" class="credit__request-cta">More Info</a>
 
             </form>
 
         </section>
 
-        <!-- TODO: Article -->
+        <!-- * Section article credit -->
         <section class="article_credit container">
 
+            <!-- * Article credit texts -->
             <h2 class="article_credit__title"> Lorem.</h2>
             <p class="article_credit__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
                 veniam
                 corporis
                 consequuntur consequatur cupiditate atque.</p>
 
+            <!-- * Article credit content -->
             <div class="article_credit__container">
                 <h3 class="article_credit__question">Lorem, ipsum.
-                    <img src="./images/icon-arrow.svg" class="article_credit__arrow">
+                    <img src="/src/assets/svg/angle-small-up.svg" class="article_credit__arrow"
+                        alt="Icon angle small up" />
                 </h3>
 
                 <article class="article_credit__content">
@@ -213,7 +213,8 @@
                 </article>
 
                 <h3 class="article_credit__question">Lorem, ipsum dolor.
-                    <img src="./images/icon-arrow.svg" class="article_credit__arrow">
+                    <img src="/src/assets/svg/angle-small-up.svg" class="article_credit__arrow"
+                        alt="Icon angle small up" />
                 </h3>
 
                 <article class="article_credit__content">
@@ -225,7 +226,8 @@
                 </article>
 
                 <h3 class="article_credit__question">Lorem ipsum dolor sit.
-                    <img src="./images/icon-arrow.svg" class="article_credit__arrow">
+                    <img src="/src/assets/svg/angle-small-up.svg" class="article_credit__arrow"
+                        alt="Icon angle small up" />
                 </h3>
 
                 <article class="article_credit__content">
@@ -238,7 +240,8 @@
                 </article>
 
                 <h3 class="article_credit__question">Lorem ipsum dolor sit amet.
-                    <img src="./images/icon-arrow.svg" class="article_credit__arrow">
+                    <img src="/src/assets/svg/angle-small-up.svg" class="article_credit__arrow"
+                        alt="Icon angle small up" />
                 </h3>
 
                 <article class="article_credit__content">
@@ -254,19 +257,23 @@
 
             </div>
 
+            <!-- !FIXME: Revisar rutas -->
             <a href="#" class="article_credit__cta">More Info</a>
 
         </section>
 
     </main>
 
-    <!-- TODO: Joined -->
+    <!-- * Section joined -->
     <section class="joined">
 
+        <!-- * Joined texts -->
         <div class="joined__container container">
             <p class="joined__paragraph"> Example: 35,000+ already joined</p>
             <h2 class="joined__title"> Example: Stay up-to-date with what we’re doing</h2>
 
+            <!--  * Joined form 
+            TODO: Implementar formulario. -->
             <form class="joined__form">
                 <input type="email" placeholder="Enter Your Email Addres" class="joined__input">
                 <div class="joined__buttons">
@@ -274,49 +281,57 @@
                 </div>
             </form>
         </div>
-
     </section>
 
     </main>
 
-    <!-- TODO: Footer -->
+    <!-- * Section footer -->
     <footer class="footer">
 
+        <!-- * Footer content -->
         <div class="footer__container container">
+
+            <!-- * Footer img -->
             <figure class="footer__figure">
-                <a href="./index.html">
-                    <img src="./favicon/Coasefin-white.ico" class="footer__logo">
+                <a href="#">
+                    <img src="/src/assets/favicon/Coasefin-white.ico" class="footer__logo" alt="Company logo footer" />
                 </a>
             </figure>
 
+            <!-- * Footer links -->
             <ul class="footer__list">
                 <li class="footer__item">
-                    <a href="./About.html" class="footer__link"> Empresa</a>
+                    <a href="#" class="footer__link"> Empresa</a>
                 </li>
                 <li class="footer__item">
-                    <a href="./services.html" class="footer__link"> Servicios</a>
+                    <a href="/src/services.html" class="footer__link"> Servicios</a>
                 </li>
                 <li class="footer__item">
-                    <a href="./Contact.html" class="footer__link"> Contacto</a>
+                    <a href="/src/contact.html" class="footer__link"> Contacto</a>
                 </li>
             </ul>
 
+            <!-- * Footer social links -->
+            <!-- !FIXME: Revisar dimensiones links -->
             <div class="footer__media">
                 <a href="https://www.facebook.com/?locale=es_LA" class="footer__social">
-                    <img src="./images/icon-facebook.svg" class="footer__icon">
+                    <img src="/src/assets/svg/icon-facebook.svg" class="footer__icon" />
                 </a>
 
                 <a href="https://twitter.com/?lang=es" class="footer__social">
-                    <img src="./images/icon-twitter.svg" class="footer__icon">
+                    <img src="/src/assets/svg/icon-twitter.svg" class="footer__icon" />
                 </a>
+
+                <!-- TODO: Agregar Copyright -->
+
             </div>
 
         </div>
 
     </footer>
 
-    <!-- TODO: JS -->
-    <script src="./js/main.js"></script>
+    <!-- * Scripts -->
+    <script src="/src/js/main.js"></script>
 
 </body>
 
