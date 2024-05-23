@@ -1158,7 +1158,7 @@ body {
 .testimony__body--show {
     pointer-events: unset;
     opacity: 1;
-    transition: opacity 1.5s ease-in-out;
+    transition: opacity .5s ease-in-out;
 }
 
 .testimony__img {
