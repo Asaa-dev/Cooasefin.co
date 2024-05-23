@@ -19,11 +19,11 @@ navButton.addEventListener("click", () => {
   navMenu.classList.toggle("nav__container--active");
 
   if (navMenu.classList.contains("nav__container--active")) {
-    navLogo.setAttribute("src", "./favicon/Coasefin-white.ico");
-    navButton.setAttribute("src", "././images/icon-close.svg");
+    navLogo.setAttribute("src", "/src/assets/favicon/Coasefin-white.ico");
+    navButton.setAttribute("src", "/src/assets/svg/icon-close.svg");
   } else {
-    navLogo.setAttribute("src", "./favicon/Coasefin.ico");
-    navButton.setAttribute("src", "././images/icon-hamburger.svg");
+    navLogo.setAttribute("src", "/src/assets/favicon/Coasefin-black.ico");
+    navButton.setAttribute("src", "/src/assets/svg/icon-hamburger.svg");
   }
 });
 
@@ -123,7 +123,7 @@ window.addEventListener("resize", () => {
     const navLogo = document.querySelector(".nav__logo");
 
     navMenu.classList.remove("nav__container--active");
-    navLogo.setAttribute("src", "./favicon/Coasefin.ico");
-    navButton.setAttribute("src", "././images/icon-hamburger.svg");
+    navLogo.setAttribute("src", "/src/assets/favicon/Coasefin-black.ico");
+    navButton.setAttribute("src", "/src/assets/svg/icon-hamburger.svg");
   }
 });
