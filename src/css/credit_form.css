@@ -1,6 +1,36 @@
 /* Styles credit_form.html*/
 
 /* Credit_form */
+.nav__link--last--credit {
+  background-color: #00E676;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.nav__link--last--credit:hover {
+  color: white;
+  background-color: #00E676;
+}
+
+@media (min-width: 768px) {
+  .nav__link--last--credit {
+    border: none;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    background-color: #00E676;
+  }
+
+  .nav__link--last--credit:hover {
+    background-color: #00E676;
+    color: white;
+    transform: scale(1.03);
+  }
+}
+
 .credit__request-info {
   padding: 40px 100px 0px;
   position: relative;
@@ -90,7 +120,7 @@
 }
 
 .gender-box h3 {
-  color: #0d56df;
+  color: black;
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 8px;
@@ -135,7 +165,7 @@
   width: 100%;
   display: inline-block;
   margin-top: 1.5rem;
-  background-color: #1489fd;
+  background-color: #00E676;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -147,7 +177,7 @@
 }
 
 .credit__request-cta:hover {
-  background-color: #0d56df;
+  background-color: #00E676;
   color: white;
   transform: scale(1.03);
 }

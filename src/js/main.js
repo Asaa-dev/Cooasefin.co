@@ -18,7 +18,7 @@ navButton.addEventListener("click", () => {
     navLogo.setAttribute("src", "/src/assets/favicon/Coasefin-white.ico");
     navButton.setAttribute("src", "/src/assets/svg/icon-close.svg");
   } else {
-    navLogo.setAttribute("src", "/src/assets/favicon/Coasefin-black.ico");
+    navLogo.setAttribute("src", "/src/assets/favicon/Cooasefin.ico");
     navButton.setAttribute("src", "/src/assets/svg/icon-hamburger.svg");
   }
 
@@ -134,7 +134,7 @@ window.addEventListener("resize", () => {
     const navLogo = document.querySelector(".nav__logo");
 
     navMenu.classList.remove("nav__container--active");
-    navLogo.setAttribute("src", "/src/assets/favicon/Coasefin-black.ico");
+    navLogo.setAttribute("src", "/src/assets/favicon/Cooasefin.ico");
     navButton.setAttribute("src", "/src/assets/svg/icon-hamburger.svg");
     
   }
