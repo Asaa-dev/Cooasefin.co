@@ -1,4 +1,4 @@
-/* *General */
+/* Ajustes generales */
 
 * {
     margin: 0;
@@ -6,9 +6,10 @@
     box-sizing: border-box;
 }
 
-/* * Variables, Asignaciones */
+/* Variables */
 
 :root {
+    /* Colors */
     --very-dark-purple: #1b003a;
     --dark-light-purple: #4b0081;
     --soft-purple-basic: #650099;
@@ -25,19 +26,19 @@
     --padding-container: 60px 0;
 }
 
-/* * Especificación general para imagenes */
+/* General img */
 
 img {
     display: block;
 }
 
-/* * Especificación general para body */
+/* General Body */
 
 body {
     font-family: 'Rubik', sans-serif;
 }
 
-/* * Especificación general para container */
+/* General container */
 
 .container {
     max-width: 1200px;
@@ -46,16 +47,15 @@ body {
     padding: var(--padding-container);
 }
 
-/* TODO: Estilos General */
+/* Styles */
 
-/* * Nav */
+/* Nav */
 .nav {
     width: 90%;
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 
     --padding-container: 0;
 }
@@ -158,10 +158,9 @@ body {
     transform: scale(1.07);
 }
 
-/* TODO: Index.html CSS Styles */
+/* Styles index.html */
 
-/* * Hero */
-
+/* Hero */
 .hero__main {
     width: 100%;
     --padding-container: 40px 0 60px;
@@ -252,7 +251,7 @@ body {
     transform: scale(1.03);
 }
 
-/* * Services */
+/* Services */
 
 .services {
     width: 100%;
@@ -401,7 +400,7 @@ body {
     transform: scale(1.03);
 }
 
-/* * Rates */
+/* Rates */
 
 .rates {
     width: 90%;
@@ -453,7 +452,6 @@ body {
     --color-items: white;
 }
 
-
 .rates__name {
     color: var(--color-plan);
     margin-bottom: 15px;
@@ -490,7 +488,7 @@ body {
     transform: scale(1.03);
 }
 
-/* * Article */
+/* Article */
 
 .article {
     width: 90%;
@@ -580,7 +578,7 @@ body {
     transform: scale(1.03);
 }
 
-/* * Joined */
+/* Joined */
 
 .joined {
     background-color: #1f2124;
@@ -638,7 +636,7 @@ body {
     transform: scale(1.03);
 }
 
-/* * Footer */
+/* Footer */
 
 .footer {
     background-color: var(--very-dark);
@@ -684,12 +682,10 @@ body {
     transform: scale(1.03);
 }
 
-/* TODO: General - Min-width: 768px */
-
+/* Styles Min-width: 768px */
 @media (min-width: 768px) {
 
-    /* * General */
-
+    /* General */
     :root {
         --padding-container: 80px 0;
     }
@@ -698,8 +694,7 @@ body {
         display: block;
     }
 
-    /* * Nav */
-
+    /* Nav */
     .nav__hamburguer {
         display: none;
     }
@@ -763,10 +758,9 @@ body {
         display: none;
     }
 
-    /* TODO: Index.html CSS Styles - Min-width: 768px */
+    /* Styles index.html - Min-width: 768px */
 
-    /* * Hero */
-
+    /* Hero */
     .hero__main {
         align-items: center;
         grid-template-columns: 5% 1fr 1fr 5%;
@@ -803,8 +797,7 @@ body {
         justify-content: flex-start;
     }
 
-    /* * Services */
-
+    /* Services */
     .services {
         grid-template-columns: 5% 1fr 1fr 5%;
     }
@@ -817,7 +810,6 @@ body {
     .services__title {
         font-size: 2.5rem;
     }
-
 
     .services__list {
         display: flex;
@@ -841,14 +833,12 @@ body {
         top: 2px;
     }
 
-
     .services__article {
         display: grid;
         gap: 1rem;
         align-items: center;
         grid-template-columns: 5% 1fr 1fr 5%;
     }
-
 
     .services__figure {
         grid-column: 1/3;
@@ -885,19 +875,19 @@ body {
         justify-content: flex-start;
     }
 
-    /* * Rates */
+    /* Rates */
 
     .rates__title {
         font-size: 2.5rem;
     }
 
-    /* * Article */
+    /* Article */
 
     .article__title {
         font-size: 2.5rem;
     }
 
-    /* * Joined */
+    /* Joined */
 
     .joined__title {
         font-size: 2.5rem;
@@ -911,7 +901,7 @@ body {
         flex: 1;
     }
 
-    /* * Footer */
+    /* Footer */
 
     .footer__container {
         display: flex;
@@ -934,12 +924,10 @@ body {
     }
 }
 
+/* Styles Min-width: 1250px */
 @media (min-width:1250px) {
 
-    /* TODO: Index.html CSS Styles - Min-width: 1250px */
-
-    /* * Hero */
-
+    /* Hero */
     .hero__main {
         width: 90%;
         grid-template-columns: 1fr 1fr;
@@ -955,8 +943,7 @@ body {
         grid-column: 1/2;
     }
 
-    /* * Services */
-
+    /* Services */
     .services {
         width: 90%;
         grid-template-columns: 1fr 1fr;
@@ -967,10 +954,9 @@ body {
     }
 }
 
-/*  TODO: About.html CSS Styles */
+/* Styles about.html*/
 
-/* * About */
-
+/* About */
 .about__main {
     width: 100%;
     --padding-container: 40px 0 60px;
@@ -1023,8 +1009,7 @@ body {
     margin: 1.3rem 0;
 }
 
-/* * Planning */
-
+/* Planning */
 .planning__container {
     grid-column: 1/-1;
     display: grid;
@@ -1069,7 +1054,6 @@ body {
 
     border-radius: 20px 100px 100px 20px;
     z-index: -1;
-
 }
 
 .planning__texts {
@@ -1091,7 +1075,7 @@ body {
     margin-top: 1.2rem;
 }
 
-/* * Values */
+/* Values */
 
 .values {
     text-align: center;
@@ -1102,7 +1086,6 @@ body {
     font-size: 2rem;
     margin-bottom: 25px;
 }
-
 
 .values__paragraph {
     line-height: 1.7;
@@ -1119,7 +1102,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
 }
 
-
 .values__icons {
     display: grid;
     gap: 1em;
@@ -1133,7 +1115,7 @@ body {
     width: 40px;
 }
 
-/* * Testimony */
+/* Testimony */
 
 .testimony__container {
     display: grid;
@@ -1153,7 +1135,6 @@ body {
     opacity: 0;
     pointer-events: none;
 }
-
 
 .testimony__body--show {
     pointer-events: unset;
@@ -1199,12 +1180,10 @@ body {
     cursor: pointer;
 }
 
-/* TODO: General CSS Styles - min-width: 768px) */
-
+/* General Styles - Min-width: 768px */
 @media (min-width: 768px) {
 
-    /* * General */
-
+    /* General */
     :root {
         --padding-container: 80px 0;
     }
@@ -1213,10 +1192,9 @@ body {
         display: block;
     }
 
-    /* TODO: About.html CSS Styles - min-width: 768px) */
+    /* Styles about.html- Min-width: 768px */
 
-    /* * About */
-
+    /* About */
     .about__main {
         align-items: center;
         grid-template-columns: 5% 1fr 1fr 5%;
@@ -1249,8 +1227,7 @@ body {
         margin: 1.5rem 0;
     }
 
-    /* * Planning */
-
+    /* Planning */
     .planning__article {
         display: grid;
         gap: 1rem;
@@ -1283,8 +1260,7 @@ body {
         font-size: 2rem;
     }
 
-    /* * Testimony */
-
+    /* Testimony */
     .testimony {
         --padding-container: 60px 0;
     }
@@ -1301,15 +1277,12 @@ body {
     .testimony__course {
         margin-top: 15px;
     }
-
 }
 
-/* TODO: General CSS Styles - min-width: 820px) */
-
+/* General Styles - Min-width: 820px */
 @media (max-width: 820px) {
 
-    /* * General */
-
+    /* General */
     :root {
         --padding-container: 80px 0;
     }
@@ -1318,10 +1291,9 @@ body {
         display: block;
     }
 
-    /* TODO: About.html CSS Styles - min-width: 820px) */
+    /* Styles about.html - Min-width: 820px */
 
-    /* * Values */
-
+    /* Values */
     .values__main {
         gap: 2em;
     }
@@ -1330,8 +1302,7 @@ body {
         grid-column: 1/-1;
     }
 
-    /* * Testimony */
-
+    /* Testimony */
     .testimony__container {
         grid-template-columns: 30px 1fr 30px;
     }
@@ -1346,16 +1317,14 @@ body {
     .testimony__img {
         width: 200px;
         height: 200px;
-
     }
 }
 
-/* TODO: About.html CSS Styles - Min-width: 1250px */
+/* Styles about.html - Min-width: 1250px */
 
 @media (min-width:1250px) {
 
-    /* * About */
-
+    /* About */
     .about__main {
         width: 90%;
         grid-template-columns: 1fr 1fr;
@@ -1372,10 +1341,9 @@ body {
     }
 }
 
-/* TODO: Services.html CSS Styles */
+/* Styles services.html */
 
-/* * Portfolio_about */
-
+/* Portfolio_about */
 .portfolio_about__main {
     width: 100%;
     --padding-container: 40px 0 60px;
@@ -1457,7 +1425,7 @@ body {
     transform: scale(1.03);
 }
 
-/* * Portfolio */
+/* Portfolio */
 
 .portfolio {
     text-align: center;
@@ -1485,7 +1453,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
 }
 
-
 .portfolio__icons {
     display: grid;
     gap: 1em;
@@ -1499,8 +1466,7 @@ body {
     width: 40px;
 }
 
-/* * Legal */
-
+/* Legal */
 .legal__container {
     grid-column: 1/-1;
     display: grid;
@@ -1595,8 +1561,7 @@ body {
     gap: 2rem;
 }
 
-/* * Credit */
-
+/* Credit */
 .credit__main {
     width: 100%;
     --padding-container: 40px 0 60px;
@@ -1682,8 +1647,7 @@ body {
     transform: scale(1.03);
 }
 
-/* * Questions */
-
+/* Questions */
 .questions {
     text-align: center;
 }
@@ -1768,12 +1732,11 @@ body {
     margin-bottom: 30px;
 }
 
-/* TODO: General CSS Styles - min-width: 768px) */
+/* General Styles - Min-width: 768px */
 
 @media (min-width: 768px) {
 
-    /* * Section: General */
-
+    /* General */
     :root {
         --padding-container: 80px 0;
     }
@@ -1782,10 +1745,9 @@ body {
         display: block;
     }
 
-    /* TODO: Services.html CSS Styles - min-width: 768px) */
+    /* Styles services.html - Min-width: 768px */
 
-    /* * Portfolio_about */
-
+    /* Portfolio_about */
     .portfolio_about__main {
         align-items: center;
         grid-template-columns: 5% 1fr 1fr 5%;
@@ -1826,8 +1788,7 @@ body {
         display: inline-block;
     }
 
-    /* * Legal */
-
+    /* Legal */
     .legal__article {
         display: grid;
         gap: 1rem;
@@ -1869,15 +1830,13 @@ body {
         display: inline-block;
     }
 
-    /* * Porfolio */
-
+    /* Porfolio */
     .portfolio__subtitle {
         font-size: 2.5rem;
         color: var(--very-dark);
     }
 
-    /* * Credit */
-
+    /* Credit */
     .credit__main {
         align-items: center;
         grid-template-columns: 5% 1fr 1fr 5%;
@@ -1918,8 +1877,7 @@ body {
         justify-content: flex-start;
     }
 
-    /* * Questions */
-
+    /* Questions */
     .questions__header {
         font-size: 2.5rem;
         color: var(--very-dark);
@@ -1927,11 +1885,11 @@ body {
 
 }
 
-/* TODO: General CSS Styles - min-width: 820px) */
+/* General Styles - Min-width: 820px */
 
 @media (max-width: 820px) {
 
-    /* * Section: General */
+    /* Section: General */
 
     :root {
         --padding-container: 80px 0;
@@ -1941,16 +1899,14 @@ body {
         display: block;
     }
 
-    /* TODO: Services.html CSS Styles - min-width: 820px) */
+    /* Styles services.html - Min-width: 820px */
 
-    /* * Questions */
-
+    /* Questions */
     .questions__copy {
         width: 100%;
     }
 
-    /* * Portfolio */
-
+    /* Portfolio */
     .portfolio__main {
         gap: 2em;
     }
@@ -1960,12 +1916,11 @@ body {
     }
 }
 
-/* TODO: Services.html CSS Styles - min-width: 1250px) */
+/* Styles services.html - Min-width: 1250px */
 
 @media (min-width:1250px) {
 
-    /* * Portfolio_about */
-
+    /* Portfolio_about */
     .portfolio_about__main {
         width: 90%;
         grid-template-columns: 1fr 1fr;
@@ -1981,8 +1936,7 @@ body {
         grid-column: 1/2;
     }
 
-    /* * Credit */
-
+    /* Credit */
     .credit__main {
         width: 90%;
         grid-template-columns: 1fr 1fr;
@@ -1999,10 +1953,9 @@ body {
     }
 }
 
-/* TODO: Estilos: Contact.html */
+/* Styles contact.html */
 
-/* * ContactUS */
-
+/* ContactUS */
 .contactUS {
     width: 90%;
     position: relative;
@@ -2028,8 +1981,7 @@ body {
     font-size: 1.7rem;
 }
 
-/* * Contact form,info,map */
-
+/* Contact form,info,map */
 .form {
     grid-area: form;
 }
@@ -2042,7 +1994,7 @@ body {
     grid-area: map;
 }
 
-/* * Contact */
+/* Contact */
 
 .contact {
     padding: 40px;
@@ -2165,7 +2117,7 @@ body {
     color: var(--dark-light-gray);
 }
 
-/* * Info */
+/* Info */
 
 .info {
     background-color: var(--very-dark);
@@ -2208,7 +2160,7 @@ body {
     font-size: 1.1em;
 }
 
-/* * Sci */
+/* Sci */
 
 .sci {
     padding-top: 1.5rem;
@@ -2235,7 +2187,7 @@ body {
     color: var(--grayish);
 }
 
-/* * Map */
+/* Map */
 
 .map {
     padding: 0;
@@ -2247,7 +2199,7 @@ body {
     border-radius: 10px;
 }
 
-/* * Networks */
+/* Networks */
 
 .networks {
     width: 100%;
@@ -2396,7 +2348,7 @@ body {
     transform: scale(1.03);
 }
 
-/* * Article */
+/* Article */
 
 .article_contact {
     width: 90%;
@@ -2486,12 +2438,11 @@ body {
     transform: scale(1.03);
 }
 
-/* TODO: Contact.html CSS Styles - max-width: 1250px) */
+/* Styles contact.html - Max-width: 1250px */
 
 @media (max-width: 1250px) {
 
-    /* * ContactUS */
-
+    /* ContactUS */
     .contactUS {
         padding: 20px;
     }
@@ -2523,8 +2474,7 @@ body {
         padding: 0;
     }
 
-    /* * Networks */
-
+    /* Networks */
     .networks {
         width: 90%;
         grid-template-columns: 1fr 1fr;
@@ -2535,12 +2485,11 @@ body {
     }
 }
 
-/* TODO: Contact.html CSS Styles - max-width: 320px) */
+/* Styles contact.html - Max-width: 320px */
 
 @media (max-width: 320px) {
 
-    /* * Contact US */
-
+    /* Contact US */
     * {
         font-size: 10px;
     }
@@ -2550,8 +2499,7 @@ body {
 
 @media (min-width: 768px) {
 
-    /* * General */
-
+    /* General */
     :root {
         --padding-container: 80px 0;
     }
@@ -2560,14 +2508,12 @@ body {
         display: block;
     }
 
-    /* * ContactUS */
-
+    /* ContactUS */
     .contactUS .contactUS__title h2 {
         font-size: 2.5rem;
     }
 
-    /* * Networks */
-
+    /* Networks */
     .networks {
         grid-template-columns: 5% 1fr 1fr 5%;
     }
@@ -2576,7 +2522,6 @@ body {
         grid-column: 2/4;
 
     }
-
     .networks__title {
         font-size: 2.5rem;
     }
@@ -2645,16 +2590,16 @@ body {
         justify-content: flex-start;
     }
 
-    /* * Article */
-
+    /* Article */
     .article_contact__title {
         font-size: 2.5rem;
     }
 
 }
 
-/* TODO: Estilos: Credit_Request.html */
+/* Styles credit_form.html*/
 
+/* Credit_form */
 .credit__request-info {
     padding: 40px 100px 0px;
     position: relative;
@@ -2699,8 +2644,7 @@ body {
     padding: 20px
 }
 
-/* * Credit__Request Section: Form */
-
+/* Credit_form Section: Form */
 .form__credit .input-box {
     width: 100%;
     margin-top: 20px;
@@ -2807,8 +2751,7 @@ body {
     transform: scale(1.03);
 }
 
-/* * Article_credit */
-
+/* Article credit */
 .article_credit {
     width: 90%;
     text-align: center;
@@ -2897,12 +2840,11 @@ body {
     transform: scale(1.03);
 }
 
-/* TODO: Credit_request.html CSS Styles - max-width: 500px) */
+/* Styles credit_form.html - Max-width: 500x */
 
 @media screen and (max-width: 500px) {
 
-    /* * Credit_request section: Form */
-
+    /* Credit_request section: Form */
     .form__credit .column {
         flex-wrap: wrap;
     }
@@ -2912,30 +2854,27 @@ body {
     }
 }
 
-/* TODO: Credit_request.html CSS Styles - max-width: 1250px) */
+/* Styles credit_form.html - Max-width: 1250px */
 
 @media (max-width: 1250px) {
 
-    /* * Credit_request-info */
-
+    /* Credit_request-info */
     .credit__request-info {
         padding: 20px;
     }
 
 }
 
-/* TODO: Credit_request.html CSS Styles - max-width: 768px) */
+/* Styles credit_form.html - Max-width: 768px */
 
 @media (min-width: 768px) {
 
-    /* * Credit_request-info */
-
+    /* Credit_request-info */
     .credit__request-info .credit__request-title h2 {
         font-size: 2.5rem;
     }
 
-    /* * Article_credit */
-
+    /* Article_credit */
     .article_credit__title {
         font-size: 2.5rem;
     }
