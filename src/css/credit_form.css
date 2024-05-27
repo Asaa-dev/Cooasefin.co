@@ -1,0 +1,278 @@
+/* Styles credit_form.html*/
+
+/* Credit_form */
+.credit__request-info {
+  padding: 40px 100px 0px;
+  position: relative;
+  width: 90%;
+}
+
+.credit__request-info .credit__request-title {
+  display: flex;
+  justify-content: center;
+  font-size: 1.7rem;
+}
+
+.credit__request-paragraph {
+  line-height: 1.5;
+  color: var(--grayish);
+  margin: 1rem auto 2.5rem;
+  max-width: 400px;
+  text-align: center;
+}
+
+.credit__request-info .credit__request-title h2 {
+  color: var(--very-dark);
+  font-size: 1.7rem;
+}
+
+.credit__request {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  width: 90%;
+  padding: 50px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px var(--grayish-alpha);
+}
+
+.container .credit__subtitle {
+  font-size: 1.7rem;
+  color: var(--very-dark);
+  text-align: center;
+  padding: 20px;
+}
+
+/* Credit_form Section: Form */
+.form__credit .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input-box label {
+  color: var(--very-dark);
+}
+
+.input-box h3 {
+  text-align: center;
+  color: var(--very-dark);
+  font-size: 1rem;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.form__credit :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: var(--dark-light-gray);
+  margin-top: 8px;
+  border: 1px solid var(--grayish-alpha);
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form__credit .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.form__credit .gender-box {
+  margin-top: 20px;
+}
+
+.gender-box h3 {
+  color: #0d56df;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.form__credit :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form__credit .gender {
+  column-gap: 5px;
+}
+
+.gender input {
+  accent-color: var(--very-dark);
+}
+
+.form__credit :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+
+.gender label {
+  color: var(--dark-light-gray);
+}
+
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+
+.section__file {
+  text-align: center;
+}
+
+.section__file .column__file {
+  text-align: center;
+}
+
+.credit__request-cta {
+  width: 100%;
+  display: inline-block;
+  margin-top: 1.5rem;
+  background-color: #1489fd;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-weight: 500;
+}
+
+.credit__request-cta:hover {
+  background-color: #0d56df;
+  color: white;
+  transform: scale(1.03);
+}
+
+/* Article credit */
+.article_credit {
+  width: 90%;
+  text-align: center;
+}
+
+.article_credit__title {
+  font-size: 1.7rem;
+  color: var(--very-dark);
+}
+
+.article_credit__arrow {
+  transition: transform 0.3s;
+}
+
+.article_credit__arrow--rotate {
+  transform: rotate(180deg);
+  filter: hue-rotate(129deg);
+}
+
+.article_credit__paragraph {
+  line-height: 1.5;
+  color: var(--grayish);
+  margin: 1rem auto 1rem;
+  max-width: 400px;
+}
+
+.article_credit__container {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.article_credit__question {
+  font-size: 1.4rem;
+  text-align: left;
+  color: var(--very-dark);
+  font-weight: 400;
+  padding: 1.6rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+}
+
+.article_credit__content {
+  display: grid;
+  border-bottom: 2px solid var(--grayish);
+
+  grid-template-rows: 0fr;
+
+  transition: grid-template-rows 0.3s;
+}
+
+.article_credit__content--show {
+  grid-template-rows: 1fr;
+}
+
+.article_credit__show {
+  overflow: hidden;
+}
+
+.article_credit__answer {
+  padding: 1.3rem;
+  text-align: left;
+  padding-top: 0;
+  color: var(--grayish);
+}
+
+.article_credit__cta {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background-color: var(--very-dark);
+  color: white;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-weight: 500;
+}
+
+.article_credit__cta:hover {
+  background-color: #0d56df;
+  color: white;
+  transform: scale(1.03);
+}
+
+/* Styles credit_form.html - Max-width: 500x */
+
+@media screen and (max-width: 500px) {
+  /* Credit_request section: Form */
+  .form__credit .column {
+    flex-wrap: wrap;
+  }
+
+  .form__credit :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+
+/* Styles credit_form.html - Max-width: 1250px */
+
+@media (max-width: 1250px) {
+  /* Credit_request-info */
+  .credit__request-info {
+    padding: 20px;
+  }
+}
+
+/* Styles credit_form.html - Max-width: 768px */
+
+@media (min-width: 768px) {
+  /* Credit_request-info */
+  .credit__request-info .credit__request-title h2 {
+    font-size: 2.5rem;
+  }
+
+  /* Article_credit */
+  .article_credit__title {
+    font-size: 2.5rem;
+  }
+}
