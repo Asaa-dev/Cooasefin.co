@@ -2,7 +2,7 @@
 
 /* Credit_form */
 .nav__link--last--credit {
-  background-color: #00E676;
+  background-color: #00e676;
   color: white;
   border: none;
   border-radius: 5px;
@@ -13,7 +13,7 @@
 
 .nav__link--last--credit:hover {
   color: white;
-  background-color: #00E676;
+  background-color: #00e676;
 }
 
 @media (min-width: 768px) {
@@ -21,11 +21,11 @@
     border: none;
     color: white;
     padding: 0.6rem 1.5rem;
-    background-color: #00E676;
+    background-color: #00e676;
   }
 
   .nav__link--last--credit:hover {
-    background-color: #00E676;
+    background-color: #00e676;
     color: white;
     transform: scale(1.03);
   }
@@ -165,7 +165,7 @@
   width: 100%;
   display: inline-block;
   margin-top: 1.5rem;
-  background-color: #00E676;
+  background-color: #00e676;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -177,7 +177,7 @@
 }
 
 .credit__request-cta:hover {
-  background-color: #00E676;
+  background-color: #00e676;
   color: white;
   transform: scale(1.03);
 }
