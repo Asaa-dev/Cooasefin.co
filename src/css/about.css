@@ -206,7 +206,7 @@
 
 .testimony__course {
   background-color: var(--very-dark);
-  color: #fff;
+  color: var(--color-white);
   display: inline-block;
   padding: 8px;
   border-radius: 5px;

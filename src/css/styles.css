@@ -10,13 +10,17 @@
 
 :root {
   /* Colors */
-  --very-dark-purple: #1b003a;
-  --dark-light-purple: #4b0081;
-  --soft-purple-basic: #650099;
-  --dark-purple: #2b064d;
+  --dark-light-blue: #1489fd;
+  --very-dark-blue: #0d56df;
+  --soft-green: #00e676;
+
   --dark-light-gray: #393d42;
-  --grayish: hsl(229, 8%, 60%);
   --very-dark: #19191a;
+  --dark-absolute: #1f2124;
+
+  --grayish: hsl(229, 8%, 60%);
+
+  --color-white: white;
   --soft-white: #e5e5f7;
 
   --grayish-alpha: hsl(229, 8%, 60%, 0.5);
@@ -131,8 +135,8 @@ body {
 }
 
 .nav__link--last {
-  background-color: #1489fd;
-  color: white;
+  background-color: var(--dark-light-blue);
+  color: var(--color-white);
   border: none;
   border-radius: 5px;
   padding: 1rem 0;
@@ -141,8 +145,8 @@ body {
 }
 
 .nav__link--last:hover {
-  color: white;
-  background-color: #1489fd;
+  color: var(--color-white);
+  background-color: var(--dark-light-blue);
 }
 
 .nav__social {
@@ -222,8 +226,8 @@ body {
 }
 
 .hero__button {
-  background-color: #1489fd;
-  color: white;
+  background-color: var(--dark-light-blue);
+  color: var(--color-white);
   text-decoration: none;
   padding: 1rem;
   border-radius: 5px;
@@ -233,19 +237,19 @@ body {
 
 .hero__button--white {
   background-color: var(--very-dark);
-  color: white;
+  color: var(--color-white);
   transition: all 0.3s ease 0s;
 }
 
 .hero__button:hover {
-  background-color: #0d56df;
-  color: white;
+  background-color: var(--very-dark-blue);
+  color: var(--color-white);
   transform: scale(1.03);
 }
 
 .hero__button--white:hover {
   background-color: var(--very-dark);
-  color: white;
+  color: var(--color-white);
   transform: scale(1.03);
 }
 
@@ -389,8 +393,8 @@ body {
 }
 
 .services__cta:hover {
-  color: white;
-  background-color: #0d56df;
+  color: var(--color-white);
+  background-color: var(--very-dark-blue);
   transform: scale(1.03);
 }
 
@@ -429,21 +433,23 @@ body {
   width: 330px;
   padding: 40px;
   --color-plan: var(--grayish);
-  --color-price: var(--very-dark-purple);
+  --color-price: var(--very-dark);
   --bg-cta: var(--very-dark);
-  --color-cta: white;
+  --color-cta: var(--color-white);
   --color-items: var(--dark-light-gray);
 }
 
 .rates__element--best {
   width: 370px;
   padding: 60px 40px;
-  background-color: #0d56df;
+  background-color: var(--very-dark-blue);
+
+  /* Variables section rates */
   --color-plan: rgb(255 255 255 / 75%);
-  --color-price: white;
+  --color-price: var(--color-white);
   --bg-cta: var(--very-dark);
-  --color-cta: white;
-  --color-items: white;
+  --color-cta: var(--color-white);
+  --color-items: var(--color-white);
 }
 
 .rates__name {
@@ -557,7 +563,7 @@ body {
   display: inline-block;
   margin-top: 1.5rem;
   background-color: var(--very-dark);
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
   padding: 1rem 1.5rem;
   border-radius: 3px;
@@ -567,21 +573,21 @@ body {
 }
 
 .article__cta:hover {
-  background-color: #0d56df;
-  color: white;
+  background-color: var(--very-dark-blue);
+  color: var(--color-white);
   transform: scale(1.03);
 }
 
 /* Joined */
 
 .joined {
-  background-color: #1f2124;
+  background-color: var(--dark-absolute);
 }
 
 .joined__container {
   max-width: 500px;
   width: 90%;
-  color: white;
+  color: var(--color-white);
   text-align: center;
 }
 
@@ -617,16 +623,16 @@ body {
 }
 
 .joined__submit {
-  background-color: #1489fd;
-  color: white;
+  background-color: var(--dark-light-blue);
+  color: var(--color-white);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   font-weight: 500;
 }
 
 .joined__submit:hover {
-  background-color: #0d56df;
-  color: white;
+  background-color: var(--very-dark-blue);
+  color: var(--color-white);
   transform: scale(1.03);
 }
 
@@ -656,7 +662,7 @@ body {
 .footer__link {
   display: inline-block;
   padding: 1rem 0;
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
   letter-spacing: 2px;
   transition: all 0.3s ease 0s;
@@ -703,7 +709,7 @@ body {
     padding: 0;
     min-height: unset;
 
-    background-color: white;
+    background-color: var(--color-white);
 
     display: block;
     transform: unset;
@@ -736,14 +742,14 @@ body {
 
   .nav__link--last {
     border: none;
-    color: white;
+    color: var(--color-white);
     padding: 0.6rem 1.5rem;
-    background-color: #1489fd;
+    background-color: var(--dark-light-blue);
   }
 
   .nav__link--last:hover {
-    background-color: #0d56df;
-    color: white;
+    background-color: var(--very-dark-blue);
+    color: var(--color-white);
     transform: scale(1.03);
   }
 

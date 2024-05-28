@@ -2,8 +2,8 @@
 
 /* Credit_form */
 .nav__link--last--credit {
-  background-color: #00e676;
-  color: white;
+  background-color: var(--soft-green);
+  color: var(--color-white);
   border: none;
   border-radius: 5px;
   padding: 1rem 0;
@@ -12,21 +12,21 @@
 }
 
 .nav__link--last--credit:hover {
-  color: white;
-  background-color: #00e676;
+  color: var(--color-white);
+  background-color: var(--very-dark);
 }
 
 @media (min-width: 768px) {
   .nav__link--last--credit {
     border: none;
-    color: white;
+    color: var(--color-white);
     padding: 0.6rem 1.5rem;
-    background-color: #00e676;
+    background-color: var(--soft-green);
   }
 
   .nav__link--last--credit:hover {
-    background-color: #00e676;
-    color: white;
+    background-color: var(--very-dark);
+    color: var(--color-white);
     transform: scale(1.03);
   }
 }
@@ -120,7 +120,7 @@
 }
 
 .gender-box h3 {
-  color: black;
+  color: var(--dark-absolute);
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 8px;
@@ -165,8 +165,8 @@
   width: 100%;
   display: inline-block;
   margin-top: 1.5rem;
-  background-color: #00e676;
-  color: white;
+  background-color: var(--very-dark);
+  color: var(--color-white);
   text-decoration: none;
   text-align: center;
   padding: 1rem 1.5rem;
@@ -177,8 +177,8 @@
 }
 
 .credit__request-cta:hover {
-  background-color: #00e676;
-  color: white;
+  background-color: var(--soft-green);
+  color: var(--color-white);
   transform: scale(1.03);
 }
 
@@ -256,7 +256,7 @@
   display: inline-block;
   margin-top: 1.5rem;
   background-color: var(--very-dark);
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
   padding: 1rem 1.5rem;
   border-radius: 3px;
@@ -266,8 +266,8 @@
 }
 
 .article_credit__cta:hover {
-  background-color: #0d56df;
-  color: white;
+  background-color: var(--very-dark-blue);
+  color: var(--color-white);
   transform: scale(1.03);
 }
 

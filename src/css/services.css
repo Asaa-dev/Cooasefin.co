@@ -68,15 +68,15 @@
   padding: 1rem;
   background-color: var(--very-dark);
   border-radius: 4px;
-  color: white;
+  color: var(--color-white);
   font-weight: 500;
   transition: all 0.3s ease 0s;
   text-decoration: none;
 }
 
 .portfolio_about__cta:hover {
-  color: white;
-  background-color: #0d56df;
+  color: var(--color-white);
+  background-color: var(--very-dark-blue);
   transform: scale(1.03);
 }
 
@@ -188,7 +188,7 @@
   display: inline-block;
   margin-top: 1.5 rem;
   background-color: var(--very-dark);
-  color: white;
+  color: var(--color-white);
   padding: 1rem 1.5rem;
   border-radius: 3px;
   text-decoration: none;
@@ -199,8 +199,8 @@
 }
 
 .legal__cta:hover {
-  color: white;
-  background-color: #0d56df;
+  color: var(--color-white);
+  background-color: var(--very-dark-blue);
   transform: scale(1.03);
 }
 
@@ -278,7 +278,7 @@
   display: inline-block;
   margin-top: 1.5 rem;
   background-color: var(--very-dark);
-  color: white;
+  color: var(--color-white);
   padding: 1rem 1.5rem;
   border-radius: 3px;
   text-decoration: none;
@@ -289,8 +289,8 @@
 }
 
 .credit__cta:hover {
-  color: white;
-  background-color: #0d56df;
+  color: var(--color-white);
+  background-color: var(--very-dark-blue);
   transform: scale(1.03);
 }
 
@@ -311,7 +311,7 @@
 .questions__padding {
   padding: 0;
   transition: padding 0.3s;
-  border: 1px solid #0d56df;
+  border: 1px solid var(--very-dark-blue);
   border-radius: 6px;
 }
 
