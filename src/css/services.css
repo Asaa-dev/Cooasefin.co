@@ -55,6 +55,7 @@
   line-height: 1.5;
   margin: 1.3rem 0;
   padding-left: 10px;
+  text-align: justify;
 }
 
 .portfolio__buttons {
@@ -182,6 +183,7 @@
   color: var(--grayish);
   line-height: 1.5;
   margin-top: 1.2rem;
+  text-align: justify;
 }
 
 .legal__cta {
@@ -265,6 +267,7 @@
   line-height: 1.5;
   margin: 1.3rem 0;
   padding-left: 10px;
+  text-align: justify;
 }
 
 .credit__buttons {

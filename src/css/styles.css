@@ -218,6 +218,10 @@ body {
   padding-left: 10px;
 }
 
+.alternative__paragraph {
+  color: var(--very-dark);
+}
+
 .hero__buttons {
   display: flex;
   justify-content: center;
@@ -455,7 +459,7 @@ body {
 .rates__name {
   color: var(--color-plan);
   margin-bottom: 15px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .rates__price {
@@ -468,9 +472,21 @@ body {
   display: grid;
   gap: 1em;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 50px;
   color: var(--color-items);
+}
+
+.rates__features_beast {
+  color: var(--very-dark);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.rates__features_beast2 {
+  color: var(--soft-white);
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .rates__cta {

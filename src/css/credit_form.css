@@ -47,7 +47,7 @@
   line-height: 1.5;
   color: var(--grayish);
   margin: 1rem auto 2.5rem;
-  max-width: 400px;
+  max-width: 600px;
   text-align: center;
 }
 
@@ -247,7 +247,7 @@
 
 .article_credit__answer {
   padding: 1.3rem;
-  text-align: left;
+  text-align: justify;
   padding-top: 0;
   color: var(--grayish);
 }
