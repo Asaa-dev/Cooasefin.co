@@ -109,28 +109,28 @@
             <h2 class="credit__subtitle">Formulario de solicitud</h2>
 
             <!-- Credit form -->
-            <form action="#" class="form__credit">
+            <form action="https://formsubmit.co/userdata.development@gmail.com" method="POST" class="form__credit">
 
                 <div class="input-box">
                     <h3>Información Personal</h3>
-                    <label>Nombres y apellidos</label>
-                    <input type="text" placeholder="Nombre completo" required />
+                    <label for="name">Nombres y apellidos</label>
+                    <input type="text" name="name" id="name" placeholder="Nombre completo" required />
                 </div>
 
                 <div class="input-box">
-                    <label>Correo electronico</label>
-                    <input type="text" placeholder="Correo electronico" />
+                    <label for="email">Correo electronico</label>
+                    <input type="text" name="email" id="email" placeholder="Correo electronico" />
                 </div>
 
                 <div class="column">
                     <div class="input-box">
-                        <label>Numero de contacto</label>
-                        <input type="number" placeholder="+57" required />
+                        <label for="phone">Numero de contacto</label>
+                        <input type="number" name="phone" id="phone" placeholder="+57" required />
                     </div>
 
                     <div class="input-box">
-                        <label>Fecha de nacimiento</label>
-                        <input type="date" placeholder="Seleccione su fecha de nacimiento" required />
+                        <label for="date">Fecha de nacimiento</label>
+                        <input type="date" name="date" id="date" placeholder="Seleccione su fecha de nacimiento" required />
                     </div>
 
                 </div>
@@ -141,17 +141,17 @@
                     <div class="gender-option">
 
                         <div class="gender">
-                            <input type="radio" id="check-male" name="gender" checked />
+                            <input type="radio" id="check-male" name="check-male" checked />
                             <label for="check-male">Hombre</label>
                         </div>
 
                         <div class="gender">
-                            <input type="radio" id="check-female" name="gender" />
+                            <input type="radio" id="check-female" name="check-female" />
                             <label for="check-female">Mujer</label>
                         </div>
 
                         <div class="gender">
-                            <input type="radio" id="check-other" name="gender" />
+                            <input type="radio" id="check-other" name="check-other" />
                             <label for="check-other">Otro</label>
                         </div>
 
@@ -161,29 +161,29 @@
 
                 <div class="input-box address">
 
-                    <label>Dirección de residencia</label>
-                    <input type="text" placeholder="Dirección de residencia" required />
+                    <label for="address">Dirección de residencia</label>
+                    <input type="text" name="address" id="address" placeholder="Dirección de residencia" required />
 
                     <div class="column">
-                        <input type="text" placeholder="Pais" />
-                        <input type="text" placeholder="Ciudad" />
+                        <input type="text" name="pais" id="pais" placeholder="Pais" />
+                        <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad" />
                     </div>
 
                 </div>
 
                 <div class="input-box">
                     <h3>Información Adicional</h3>
-                    <label>Pagaduría</label>
-                    <input type="text" placeholder="Pagaduría" />
+                    <label for="pagaduria">Pagaduría</label>
+                    <input type="text" name="pagaduria" id="pagaduria" placeholder="Pagaduría" />
                 </div>
 
                 <div class="input-box address">
 
-                    <label> Información de ingresos mensuales </label>
+                    <label for="credit"> Información de ingresos mensuales </label>
 
                     <div class="column">
-                        <input type="Number" placeholder="$ Ingresos" />
-                        <input type="Number" placeholder="$ Egresos" />
+                        <input type="Number" name="ingresos" id="ingresos" placeholder="$ Ingresos" />
+                        <input type="Number" name="egresos" id="egresos" placeholder="$ Egresos" />
                     </div><br>
 
                 </div>
