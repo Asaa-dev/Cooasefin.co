@@ -10,8 +10,8 @@
   <meta name="title" content="Cooasefin.co - Informative company website - contact.html" />
   <meta name="description" content="Detailed information page about the company cooasefin" />
 
-  <!-- TODO: Agregar un titulo coherente -->
-  <title>Cooasefin.com - Información de contacto</title>
+  <!-- TODO: Cambiar diseño de la pagina.-->
+  <title>Información de contacto | Cooasefin</title>
 
   <!-- Link -->
   <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/favicon/apple-touch-icon.png" />
@@ -23,7 +23,7 @@
   <link rel="manifest" href="/src/assets/favicon/site.webmanifest" />
 
   <link rel="stylesheet" href="/src/css/styles.css" />
-    <link rel="stylesheet" href="/src/css/contact.css" />
+  <link rel="stylesheet" href="/src/css/contact.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet" />
@@ -56,7 +56,7 @@
             <a href="/index.html" class="nav__link">Inicio</a>
           </li>
           <li class="nav__element">
-            <a href="/about.html" class="nav__link">Empresa</a>
+            <a href="/about.html" class="nav__link">¿Quienes somos?</a>
           </li>
           <li class="nav__element">
             <a href="/services.html" class="nav__link">Servicios</a>
@@ -92,8 +92,8 @@
       </div>
 
       <div class="contactUS__paragraph">
-        <p>Por favor, completa el siguiente formulario para agendar una cita con uno de nuestros especialistas en
-          créditos. Estamos aquí para ayudarte con tus necesidades financieras y encontrar la mejor solución para ti.
+        <p>Completa el siguiente formulario para programar una consulta con nuestros especialistas en créditos. Estamos
+          comprometidos en ayudarte a encontrar la mejor solución financiera para tus necesidades.
         </p>
       </div>
 
@@ -109,48 +109,48 @@
           <h3>Formulario de contacto</h3>
 
           <form action="https://formsubmit.co/userdata.development@gmail.com" method="POST" />
-            <div class="formBox">
+          <div class="formBox">
 
-              <div class="row50">
-                <div class="inputBox">
-                  <label for="name">Nombres completos</label>
-                  <input type="text" name="name" id="name" placeholder="Nombres completos">
-                </div>
-
-                <div class="inputBox">
-                  <label for="last_name">Apellidos</label>
-                  <input type="last_name" name="last_name" id="last_name" placeholder="Apellidos">
-                </div>
+            <div class="row50">
+              <div class="inputBox">
+                <label for="name">Nombres completos</label>
+                <input type="text" name="name" id="name" placeholder="Nombres completos">
               </div>
 
-              <div class="row50">
-                <div class="inputBox">
-                  <label for="email">Correo electronico</label>
-                  <input type="email" name="email" id="email" placeholder="Correo electronico">
-                </div>
+              <div class="inputBox">
+                <label for="last_name">Apellidos</label>
+                <input type="last_name" name="last_name" id="last_name" placeholder="Apellidos">
+              </div>
+            </div>
 
-                <div class="inputBox">
-                  <label for="phone">Numero de contacto</label>
-                  <input type="phone" name="phone" id="phone" placeholder="Numero de contacto">
-                </div>
-
+            <div class="row50">
+              <div class="inputBox">
+                <label for="email">Correo electronico</label>
+                <input type="email" name="email" id="email" placeholder="Correo electronico">
               </div>
 
-              <div class="row100">
-                <div class="inputBox">
-                  <label>Información detallada de su solicitud.</label>
-                  <textarea placeholder="Por favor expliquenos su solicitud de forma detallada."></textarea>
-                </div>
-              </div>
-
-              <div class="row100">
-                <div class="inputBox">
-                  <!-- !FIXME: Revisar rutas -->
-                  <input class="contact__request-cta" type="submit" value="Enviar">
-                </div>
+              <div class="inputBox">
+                <label for="phone">Numero de contacto</label>
+                <input type="phone" name="phone" id="phone" placeholder="Numero de contacto">
               </div>
 
             </div>
+
+            <div class="row100">
+              <div class="inputBox">
+                <label>Información detallada de su solicitud.</label>
+                <textarea placeholder="Por favor expliquenos su solicitud de forma detallada."></textarea>
+              </div>
+            </div>
+
+            <div class="row100">
+              <div class="inputBox">
+                <!-- !FIXME: Revisar rutas -->
+                <input class="contact__request-cta" type="submit" value="Enviar">
+              </div>
+            </div>
+
+          </div>
 
           </form>
 
@@ -207,89 +207,6 @@
   </header>
 
   <main class="main">
-
-    <!-- TODO: Diseñar estructura de section networks 
-        !FIXME: Pendiente de desarrollo
-        ?: Implementar si existe actualización.
-        Section networks    
-    -->
-    <!-- <section class="networks container">
-
-      <div class="networks__content">
-        <h2 class="networks__title">Lorem.</h2>
-        <p class="networks__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, nihil sapiente!
-          Libero minima aliquam numquam?</p>
-
-        <ul class="networks__list">
-          <li class="networks__element">
-            <a href="#" class="networks__tab networks__tab--active" data-article="1">Lorem.</a>
-          </li>
-
-          <li class="networks__element">
-            <a href="#" class="networks__tab" data-article="2">Lorem, ipsum.
-            </a>
-          </li>
-
-          <li class="networks__element">
-            <a href="#" class="networks__tab" data-article="3">Lorem, ipsum dolor.
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="networks__container">
-
-        <article class="networks__article networks__article--active">
-          <figure class="networks__figure">
-            <img src="./images/recursos/whatsapp.png" class="networks__img">
-          </figure>
-
-          <div class="networks__texts">
-            <h3 class="networks__subtitle"> Lorem.</h3>
-            <p class="networks__copy"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, non odio? Totam
-              itaque aliquid modi!</p>
-
-            <div class="networks__buttons">
-              <a href="#" class="networks__cta">More Info</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="networks__article">
-          <figure class="networks__figure">
-            <img src="./images/recursos/gmail.png" class="networks__img">
-          </figure>
-
-          <div class="networks__texts">
-            <h3 class="networks__subtitle"> Lorem, ipsum.</h3>
-            <p class="networks__copy"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel fugiat voluptas
-              maxime minima eos voluptate!</p>
-
-            <div class="networks__buttons">
-              <a href="#" class="networks__cta">More Info</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="networks__article">
-          <figure class="networks__figure">
-            <img src="./images/recursos/linkedin.png" class="networks__img">
-          </figure>
-
-          <div class="networks__texts">
-            <h3 class="networks__subtitle">Lorem, ipsum dolor.</h3>
-            <p class="networks__copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus libero eos
-              ratione impedit adipisci cum!</p>
-
-            <div class="networks__buttons">
-              <a href="#" class="networks__cta">More Info</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-
-    </section> -->
 
     <!-- Sectión article contact -->
     <section class="article_contact container">
@@ -370,15 +287,15 @@
 
       <!-- Joined texts -->
       <div class="joined__container container">
-        <p class="joined__paragraph"> 1,000+ Clientes activos</p>
-        <h2 class="joined__title"> Notificarme de nuevas ofertas</h2>
+        <p class="joined__paragraph"> +1,000 Clientes activos</p>
+        <h2 class="joined__title"> Solicitar información de nuevas ofertas</h2>
 
         <!--  Joined form 
               TODO: Implementar formulario. -->
         <form class="joined__form">
-          <input type="email" placeholder="Ingresar correo electrónico" class="joined__input">
+          <input type="email" placeholder="Correo electrónico" class="joined__input">
           <div class="joined__buttons">
-            <input type="submit" value="Suscribirse" class="joined__submit">
+            <input type="submit" value="Solicitar" class="joined__submit">
           </div>
         </form>
       </div>
@@ -402,7 +319,7 @@
       <!-- Footer links -->
       <ul class="footer__list">
         <li class="footer__item">
-          <a href="/about.html" class="footer__link"> Empresa</a>
+          <a href="/about.html" class="footer__link"> ¿Quienes somos?</a>
         </li>
         <li class="footer__item">
           <a href="/services.html" class="footer__link"> Servicios</a>
