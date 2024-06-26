@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<!-- TODO: Revisión general -->
-
+<!-- Head -->
 <head>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Primary Meta Tags -->
   <meta name="title" content="Cooasefin.co - Informative company website - index.html" />
   <meta name="description" content="Detailed information page about the company cooasefin" />
 
-  <!-- TODO: Agregar un titulo coherente -->
   <title>Cooasefin</title>
 
-  <!-- Link -->
   <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/favicon/favicon-16x16.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicon/favicon-32x32.png" />
@@ -28,28 +23,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet" />
-
 </head>
 
+<!-- Body -->
 <body>
 
+  <!-- Header -->
   <header class="hero">
-    <!-- Navbar -->
     <nav class="nav container">
-
-      <!-- Navbar figure -->
       <figure class="nav__figure">
         <a href="#">
           <img src="/src/assets/favicon/Cooasefin.ico" class="nav__logo" alt="Company logo" />
         </a>
       </figure>
 
-      <!-- Navbar hamburguer -->
       <div class="nav__hamburguer">
         <img src="/src/assets/svg/icon-hamburger.svg" class="nav__button" alt="Icon hamburguer responsive" />
       </div>
 
-      <!-- Navbar links -->
       <div class="nav__container">
         <ul class="nav__list container">
           <li class="nav__element">
@@ -69,7 +60,6 @@
           </li>
         </ul>
 
-        <!-- Navbar social media -->
         <div class="nav__social">
           <a href="https://www.facebook.com/?locale=es_LA" class="nav__media">
             <img src="/src/assets/svg/icon-facebook.svg" class="nav__socialme" alt="Icon facebook" />
@@ -78,54 +68,54 @@
             <img src="/src/assets/svg/icon-twitter.svg" class="nav__socialme" alt="Icon twitter" />
           </a>
         </div>
-
       </div>
-
     </nav>
 
-    <!-- Section hero -->
+    <!-- Hero main -->
     <section class="hero__main container">
       <figure class="hero__figure">
         <img src="/src/assets/img/project/hero-img.png" class="hero__img" alt="Hero image" />
       </figure>
 
-      <!-- Hero texts -->
       <article class="hero__texts">
-        <h1 class="hero__title"> Expertos en </h1>
-        <h1 class="hero__title"> Normalización de cartera </h1>
-        <p class="hero__paragraph">En <b class="alternative__paragraph">cooasefin</b>, analizamos orientamos y elegimos
-          la mejor alternativa de crédito
-          con el fin de brindar un alivio financiero a nuestros clientes.</p>
+        <h1 class="hero__title">Expertos en</h1>
+        <h1 class="hero__title">Normalización de cartera</h1>
+        <p class="hero__paragraph">
+          En <b class="alternative__paragraph">cooasefin</b>, analizamos
+          orientamos y elegimos la mejor alternativa de crédito con el fin de
+          brindar un alivio financiero a nuestros clientes.
+        </p>
 
-        <!-- Hero buttons -->
         <div class="hero__buttons">
-          <a href="/credit_form.html" class="hero__button"> Solicitar asesoría </a>
-          <a href="/about.html" class="hero__button hero__button--white"> Más información </a>
+          <a href="/credit_form.html" class="hero__button">
+            Solicitar asesoría
+          </a>
+          <a href="/about.html" class="hero__button hero__button--white">
+            Más información
+          </a>
         </div>
       </article>
     </section>
-
   </header>
 
+  <!-- Main -->
   <main class="main">
 
-    <!-- Section services -->
+    <!-- Services -->
     <section class="services container">
-
-      <!-- Services texts -->
       <div class="services__content">
         <h2 class="services__title">Servicios</h2>
-        <p class="services__paragraph">Contamos con un amplio portafolio de servicios, con el fin de satisfacer
-          cualquier necesidad créditicia a nuestros futuros clientes.</p>
-
-        <!-- Services list -->
+        <p class="services__paragraph">
+          Contamos con un amplio portafolio de servicios, con el fin de
+          satisfacer cualquier necesidad créditicia a nuestros futuros
+          clientes.
+        </p>
         <ul class="services__list">
           <li class="services__element">
             <a href="#" class="services__tab services__tab--active" data-article="1">Normalización</a>
           </li>
           <li class="services__element">
-            <a href="#" class="services__tab" data-article="2">Libranza
-            </a>
+            <a href="#" class="services__tab" data-article="2">Libranza </a>
           </li>
           <li class="services__element">
             <a href="#" class="services__tab" data-article="3">Bancarización
@@ -134,274 +124,209 @@
         </ul>
       </div>
 
-      <!-- Services content -->
       <div class="services__container">
-
-        <!-- Services 1 article -->
         <article class="services__article services__article--active">
-
-          <!-- Services img -->
           <figure class="services__figure">
             <img src="/src/assets/img/project/service1-img.png" class="services__img" alt="Service image number 1" />
           </figure>
 
-          <!-- Services 1 texts -->
           <div class="services__texts">
-            <h3 class="services__subtitle"> Normalización</h3>
-            <p class="services__copy"> Este servicio es nuestra oferta principal y está enfocada en sanear al cliente
-              que actualmente está reportado o presenta moras con algunas entidades.</p>
+            <h3 class="services__subtitle">Normalización</h3>
+            <p class="services__copy">
+              Este servicio es nuestra oferta principal y está enfocada en
+              sanear al cliente que actualmente está reportado o presenta
+              moras con algunas entidades.
+            </p>
 
-            <!-- Services 1 buttons -->
             <div class="services__buttons">
-
-              <!-- !FIXME: Revisar rutas 
-                   ? Agregar enlace a la sección correspondiente en pagina de servicios
-              -->
               <a href="/services.html" class="services__cta">Más información</a>
             </div>
-
           </div>
         </article>
 
-        <!-- Services 2 aticle -->
         <article class="services__article">
-
-          <!-- Services 2 img -->
           <figure class="services__figure">
             <img src="/src/assets/img/project/service2-img.png" class="services__img" />
           </figure>
 
-          <!-- Services 2 texts -->
           <div class="services__texts">
-            <h3 class="services__subtitle"> Libranza </h3>
-            <p class="services__copy"> Ofrecemos una amplia variedad de servicios y modalidades de crédito aplicadas en
-              campañas especiales.
+            <h3 class="services__subtitle">Libranza</h3>
+            <p class="services__copy">
+              Ofrecemos una amplia variedad de servicios y modalidades de
+              crédito aplicadas en campañas especiales.
             </p>
 
-            <!-- Services 2 buttons -->
             <div class="services__buttons">
-
-              <!-- !FIXME: Revisar rutas 
-                   ? Agregar enlace a la sección correspondiente en pagina de servicios
-              -->
               <a href="/services.html" class="services__cta">Más información</a>
             </div>
           </div>
         </article>
 
-        <!-- Services 3 article -->
         <article class="services__article">
-
-          <!-- Services 3 img -->
           <figure class="services__figure">
             <img src="/src/assets/img/project/service3-img.png" class="services__img" />
           </figure>
-
-          <!-- Services 3 texts -->
           <div class="services__texts">
-            <h3 class="services__subtitle"> Bancarización </h3>
-            <p class="services__copy">Servicio crediticio enfocado en la unificación de carteras con el fin de liberar
-              al cliente de múltiples obligaciones mensuales.</p>
+            <h3 class="services__subtitle">Bancarización</h3>
+            <p class="services__copy">
+              Servicio crediticio enfocado en la unificación de carteras con
+              el fin de liberar al cliente de múltiples obligaciones
+              mensuales.
+            </p>
 
-            <!-- Services 3 buttons -->
-            <div class="services__buttons">
-
-              <!-- !FIXME: Revisar rutas 
-                   ? Agregar enlace a la sección correspondiente en pagina de servicios
-              -->
-              <a href="/services.html" class="services__cta">Más información</a>
-            </div>
+            <div class="services__buttons"></div>
+            <a href="/services.html" class="services__cta">Más información</a>
           </div>
         </article>
-
       </div>
     </section>
 
-    <!-- Section rates -->
+    <!-- Rates -->
     <section class="rates container">
-
-      <!-- Rates texts -->
       <h2 class="rates__title">Campañas especiales</h2>
       <p class="rates__paragraph">
-        Contamos con amplio portafolio de pagadurías permitidas para crédito a nivel nacional, con el fin de ofrecer
-        tasas preferenciales y
-        campañas especiales de crédito a nuestros futuros clientes.</p>
-      <p class="rates__paragraph">
-        Tasas preferenciales por sector <b class="alternative__paragraph">Disponibles</b>
+        Ofrecemos un amplio portafolio de pagadurías a nivel nacional,
+        garantizando tasas preferenciales y campañas especiales de crédito
+        para nuestros clientes.
       </p>
 
-      <!-- Rates tables -->
       <div class="rates__table">
-
-        <!-- Rates element -->
         <div class="rates__element">
           <p class="rates__name">Sector Publico</p>
           <h3 class="rates__price">1.75%</h3>
 
-          <!-- Rates items -->
           <div class="rates__items">
             <p class="rates__features_beast">Disponible</p>
             <p class="rates__features">Normalización</p>
             <p class="rates__features">Servicios de crédito</p>
           </div>
-
-          <!-- !FIXME: Revisar rutas 
-                   ? Agregar enlace a la sección correspondiente en pagina de servicios
-              -->
           <a href="/credit_form.html" class="rates__cta">Solicitar</a>
-
         </div>
 
-        <!-- Rates element best -->
         <div class="rates__element rates__element--best">
           <p class="rates__name">Sector Pensional</p>
           <h3 class="rates__price">1.70%</h3>
 
-          <!-- Rates items best -->
           <div class="rates__items">
             <p class="rates__features_beast2">Disponible</p>
             <p class="rates__features">Normalización</p>
             <p class="rates__features">Servicios de crédito</p>
           </div>
-
-          <!-- !FIXME: Revisar rutas 
-                   ? Agregar enlace a la sección correspondiente en pagina de servicios
-          -->
           <a href="/credit_form.html" class="rates__cta">Solicitar</a>
-
         </div>
 
-        <!-- Rates element -->
         <div class="rates__element">
           <p class="rates__name">Sector Privado</p>
           <h3 class="rates__price">1.78%</h3>
 
-          <!-- Rates items -->
           <div class="rates__items">
             <p class="rates__features_beast">Disponible</p>
             <p class="rates__features">Normalización</p>
             <p class="rates__features">Servicios de crédito</p>
           </div>
-
-          <!-- !FIXME: Revisar rutas 
-                   ? Agregar enlace a la sección correspondiente en pagina de servicios
-          -->
           <a href="/credit_form.html" class="rates__cta">Solicitar</a>
-
         </div>
-
       </div>
-
     </section>
 
+    <!-- Article Questions -->
     <section class="article container">
-
-      <!-- Article texts -->
-      <h2 class="article__title"> Preguntas frecuentes</h2>
-      <p class="article__paragraph">Para nosotros es de vital importancia abarcar cualquier posible respuesta ante las
-        dudas que se presentan.</p>
+      <h2 class="article__title">Preguntas frecuentes</h2>
+      <p class="article__paragraph">
+        Para nosotros es de vital importancia abarcar cualquier posible
+        respuesta ante las dudas que se presentan.
+      </p>
 
       <div class="article__container">
-
-        <!-- Article 1 img or icon -->
-        <h3 class="article__question">¿Como solicitar asesoría financiera?
+        <h3 class="article__question">
+          ¿Como solicitar asesoría financiera?
           <img src="/src/assets/svg/angle-small-up.svg" class="article__arrow" alt="Icon arrow" />
         </h3>
 
-        <!-- Article 1 content questions -->
-        <article class="article__content">
-          <div class="article__show ">
-            <p class="article__answer">Dentro de nuestra página existen diferentes rutas de navegación donde puede
-              obtener información detallada de como solicitar nuestra asesoría de crédito personalizada.</p>
-          </div>
-        </article>
-
-        <!-- Article 2 img or icon -->
-        <h3 class="article__question">¿Información de contacto?
-          <img src="/src/assets/svg/angle-small-up.svg" class="article__arrow" alt="Icon arrow" />
-        </h3>
-
-        <!-- Article 2 content questions  -->
-        <article class="article__content">
-          <div class="article__show">
-            <p class="article__answer"> En la sección superior de la página puede dirigirse a la sección de contacto,
-              allí encontrará toda la información de contacto de nuestra empresa.</p>
-          </div>
-        </article>
-
-        <!-- Article 3 img or icon -->
-        <h3 class="article__question"> ¿Donde puedo solicitar mi crédito?
-          <img src="/src/assets/svg/angle-small-up.svg" class="article__arrow" alt="Icon arrow" />
-        </h3>
-
-        <!-- Article 3 content questions -->
         <article class="article__content">
           <div class="article__show">
             <p class="article__answer">
-              Dentro de esta página usted podrá encontrar múltiples botones de acceso que lo dirigen hacia nuestra
-              sección de solicitud de crédito</p>
+              Dentro de nuestra página existen diferentes rutas de navegación
+              donde puede obtener información detallada de como solicitar
+              nuestra asesoría de crédito personalizada.
+            </p>
           </div>
         </article>
 
-        <!-- Article 4 img or icon -->
-        <h3 class="article__question"> ¿Qué beneficios obtengo?
+        <h3 class="article__question">
+          ¿Información de contacto?
           <img src="/src/assets/svg/angle-small-up.svg" class="article__arrow" alt="Icon arrow" />
         </h3>
 
-        <!-- Article 4 content questions -->
         <article class="article__content">
           <div class="article__show">
-            <p class="article__answer"> Usted obtiene un acompañamiento personalizado en todo el proceso de su futuro
-              crédito con nosotros, con el fin de lograr satisfacer sus necesidades personales, así como también
-              ayudarle a mejorar su estado crediticio.</p>
+            <p class="article__answer">
+              En la sección superior de la página puede dirigirse a la sección
+              de contacto, allí encontrará toda la información de contacto de
+              nuestra empresa.
+            </p>
           </div>
         </article>
 
+        <h3 class="article__question">
+          ¿Donde puedo solicitar mi crédito?
+          <img src="/src/assets/svg/angle-small-up.svg" class="article__arrow" alt="Icon arrow" />
+        </h3>
+
+        <article class="article__content">
+          <div class="article__show">
+            <p class="article__answer">
+              Dentro de esta página usted podrá encontrar múltiples botones de
+              acceso que lo dirigen hacia nuestra sección de solicitud de
+              crédito
+            </p>
+          </div>
+        </article>
+
+        <h3 class="article__question">
+          ¿Qué beneficios obtengo?
+          <img src="/src/assets/svg/angle-small-up.svg" class="article__arrow" alt="Icon arrow" />
+        </h3>
+
+        <article class="article__content">
+          <div class="article__show">
+            <p class="article__answer">
+              Usted obtiene un acompañamiento personalizado en todo el proceso
+              de su futuro crédito con nosotros, con el fin de lograr
+              satisfacer sus necesidades personales, así como también ayudarle
+              a mejorar su estado crediticio.
+            </p>
+          </div>
+        </article>
       </div>
 
-      <!-- Article button -->
-      <!-- !FIXME: Revisar rutas 
-                   ? Agregar enlace a la sección correspondiente en pagina de servicios
-      -->
       <a href="/contact.html" class="article__cta">Mas información</a>
-
     </section>
 
-    <!-- Section joined -->
+    <!-- Joined -->
     <section class="joined">
-
-      <!-- Joined texts -->
       <div class="joined__container container">
-        <p class="joined__paragraph"> +1,000 Clientes activos</p>
-        <h2 class="joined__title"> Solicitar información de nuevas ofertas</h2>
+        <p class="joined__paragraph">+1,000 Clientes activos</p>
+        <h2 class="joined__title">Solicitar información de nuevas ofertas</h2>
 
-        <!--  Joined form 
-              TODO: Implementar formulario. -->
         <form class="joined__form">
-          <input type="email" placeholder="Correo electrónico" class="joined__input">
+          <input type="email" placeholder="Correo electrónico" class="joined__input" />
           <div class="joined__buttons">
-            <input type="submit" value="Solicitar" class="joined__submit">
+            <input type="submit" value="Solicitar" class="joined__submit" />
           </div>
         </form>
       </div>
     </section>
-
   </main>
 
-  <!-- Section footer -->
+  <!-- Footer -->
   <footer class="footer">
-
-    <!-- Footer content -->
     <div class="footer__container container">
-
-      <!-- Footer img -->
       <figure class="footer__figure">
         <a href="#">
           <img src="/src/assets/favicon/Coasefin-white.ico" class="footer__logo" alt="Company logo footer" />
         </a>
       </figure>
-
-      <!-- Footer links -->
       <ul class="footer__list">
         <li class="footer__item">
           <a href="/about.html" class="footer__link">¿Quienes somos?</a>
@@ -414,27 +339,18 @@
         </li>
       </ul>
 
-      <!-- Footer social links -->
       <div class="footer__media">
         <a href="https://www.facebook.com/?locale=es_LA" class="footer__social">
           <img src="/src/assets/svg/icon-facebook.svg" class="footer__icon" />
         </a>
-
         <a href="https://twitter.com/?lang=es" class="footer__social">
           <img src="/src/assets/svg/icon-twitter.svg" class="footer__icon" />
         </a>
-
-        <!-- TODO: Agregar Copyright 
-             ?: Implementar si existe actualización.
-        -->
-
       </div>
-
     </div>
-
   </footer>
 
-  <!-- Scripts -->
+  <!-- JS -->
   <script src="/src/js/main.js"></script>
 
 </body>
